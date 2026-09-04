@@ -5,7 +5,14 @@ Any announcements regarding the NIWC Software Testbed will be posted on here.
 
 This repository is a work in progress. We will continue to post the latest releases, documentation, instructional videos as they are being developed. 
 
-### ShoreECIDS v2.0.0 Registration Dialog Button Fix
+### V2.1 NIWC Software Testbed Release (September 2026)
+All future releases will now be posted under the Release tab to the right of this page. 
+
+Included in this release are:
+v2.1 ShoreECDIS
+V2.1 S100Viewer
+
+### ShoreECDIS v2.0.0 Registration Dialog Button Fix
 
 In this release of ShoreECDIS there is a known issue with the support text and continue button being cut off with text higher than 100%. This will be resolved as a patch v*2.0.1*.
 
@@ -52,7 +59,7 @@ Repository contains latest release of NIWC's Software Testbed:
 2. ShoreECDIS
 
 
-NIWC Software Testbed Latest Version: 2.0.0.0 (April 2026)
+NIWC Software Testbed Latest Version: 2.1.0.0 (September 2026)
 
 
 
