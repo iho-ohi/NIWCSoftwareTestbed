@@ -1,0 +1,197 @@
+ShoreECDIS Release Notes
+
+2.1.0.0
+
+*** CURRENT LIMITATIONS:
+
+ - You must remove the %LOCALAPPDATA%\NIWC\ShoreECDIS\ShoreECDIS.user.configdb before using an older version
+
+ - S-57 ENC Charts do not provide route validation alerts for monitoring or planning modes
+
+* Enhancements
+
+ - New application color scheme
+
+ - S-57 Support
+
+ - Temporal input
+   - Time slider and calander range inputs
+   - Current and Custom time selection modes. Current mode will make chart re-render calls every minute
+   - Double-click temporal limited dataset in chart library will update custom time selection of chart when centering on chart
+
+ - Mouse Drag compositor area, with overscale area dragged into view on intermediate rendering
+
+ - Mouse wheel zoom progressive based on mouse wheel speed (not simply switching between pre-defined zoom levels)
+
+ - Skin of Earth base render layer
+
+ - Projection support
+  - Mercator (existing 1SP type)
+  - Web Mercator
+  - World Mercator
+  - Cylindrical Equidistant
+  - Lambert Conformal (North/South)
+  - Polar Stereographic (North/South)
+
+ - GPS Configuration
+  - Serial - COM on windows supports USB and traditional serial connections
+  - TCP - Client dials out (This matches the IEC 61162-450 / standard maritime integration paradigm where the gateway is the producer and multiple clients, such as ShoreECDIS can subscribe by connecting in)
+  - UDP - Datagrams in UDP packets on the configured port will be split by \r\n into multiple NMEA messages
+
+ - SENC Migration support. Old versions of the program are usable with previously installed data.
+
+ - Display Mode and Independent Viewing Group persistence. All Display Modes are static, and if any of the Standard/Other Information viewing group layers or groups are removed, the portrayal settings will show user in "Custom" mode. Custom modes aren't persisted after shutdown, and restarting the program will put individual products in their previous display modes with any of the persisted independent viewing groups but none of the custom changes.
+
+ - Allow change of individual product's color palettes from the global selected color profile (If a portrayal catalog is missing a color palette will show as "Missing" but can be changed to begin displaying the product again)
+
+ - Include decryption capabilites for:
+  - S-100 Documentation MasterKey/Manufacturer id
+  - Public S-63 key used for sea trials testing
+  - S-64 Encrypted datasets keys
+  - Hardware locked encryption forced, so UserPermit issued during registration must be found in PERMIT.TXT or PERMIT.XML dataset keys
+
+ * Fixes
+
+  - Load portrayal_catalogue.xml verbatim. Won't cause error if another portrayal_catalogue.xml is found in the same folder structure
+
+  - Doesn't freeze chart while installing data sets
+
+  - Load fonts from portrayal catalogs
+
+  - Drag CATALOG.XML (or CATALOG.031) onto Chart or Chart Library to install exchange sets
+ 
+2.0.0.0 
+*** CURRENT LIMITATIONS:
+  -S-102 v2.0.x datasets will not show due to no symbol files in PortrayalCatalog
+  -Temporal support is limited so S-124/S-111 data shown are not controllable by time set
+
+* Enhancements
+  -Chart library
+    - Added Multi-PortrayalCatalog version support 
+      -Support included for S-101 (v4.0 upward), S-102 (v2.0 upward), S-111 (v1.0 upward)
+    - Added S-100 v4.0 to v5.x FC and PC schemas
+    - Datasets can now be installed without supporting portrayal catalog*
+
+  -Registration
+    - Added a three day time limited trial, after which time, the user will be required to request a free key from NIWC.
+ 
+  -UI
+    - Implemented product checkboxes for toggling individual dataset visibility based on product version
+    - DisplayPlanes no longer case sensitive
+
+  - Pick Report
+    - Enhanced functionality
+	  - Support for S-104
+
+  - S-104*
+	- Water level adjustment for S-102 features
+	- *No portrayal catalog required for install + water level adjustment
+ 
+  - S-111
+	  -Implemented Irregular gridded data thinning algorithm 
+
+  - S-124
+	  -Added S-124 support
+
+* Fixes
+  - Pick Report
+	  - Fixed Irregular gridded pick reports (S-111)
+
+  - S-111
+    - Fix Feature attribute parsing on SW and NE coordinate values to support S-111 irregular grid import
+	  - Fix surface current symbol scale
+
+  - GML-based Products
+    - Change to better support GML datasets when specific boundedBy GML attributes are not specified. 
+
+1.2.0.0
+* Fixed broken shortcut links and .NET 5.0 runtime check
+
+* Enhancements
+  - Updated to S-100 v5.0 schemas
+  - Implement context parameter validation
+  - Date dependent support
+  - Improved line rendering
+    - When a curve splits two features with common portrayal
+      - Align dash patterns so that dashed lines don't render as solid (pattern synchronization)
+	  - Align symbol placement to enhance appearance (symbol synchronization)
+	- Only place one point symbol on curves (previously placed a symbol per curve segment)
+  - Pick Report
+    - Show aliases
+    - Better highlighting
+	- Features marked for safety checking are highlighted (red: causes alarm, yellow: causes indication)
+	- Show NoGeometry features when portrayed with NullInstruction
+	- Show features which are fully masked (e.g. NavigationalSystemOfMarks)
+	- Support pick report on text
+	- Change symbol to IEC 62288:2014 2.12
+    - Improved performance
+	- Updates dynamically as chart redraws
+	- Expose debugging support
+	- Clipboard support
+  - Routes
+    - Draw while selected in route simulator
+	- Draw while loaded in route editor
+	- Implement graphical editing
+	- Implement route checking
+	- Implement route hazards review
+	  - Double-click a row to display the hazard
+  - Ownship
+    - User specified safety check parameters
+	- Allow manual control of route sim speed
+  - Monitor calibration
+    - Add button to show black level adjustment symbol
+    - Add page to display color differentiation test diagram
+  - Chart Library
+    - Double-click a dataset to display it
+  - Legend
+	 - Show bathy / non-bathy quality
+  - Enhanced window layout / appearance / functionality
+	- Support very small window sizes
+	- Behavior of PickReport window (resizing, topmost, etc.)
+	- Implement portrayal context parameter validation
+
+* Fixes
+  - Line suppression when drawing instruction uses spatial reference (coastline was sometimes suppressed)
+  - Safety check highlight is now restricted to the visible portion of the containing dataset
+  - Occasional crash on startup ("database is locked")
+  - Occasional crash due to safety check multiple threads running concurrently
+  - Anti-meridian
+    - Fix No ENC alert
+	- Fix chart rendering issues
+	- Fix safety check & highlights
+	- Fix past track
+	- Fix pick report (missing features)
+
+1.1.0.0
+* Enhancements
+  - Detect incompatible SENC on startup
+  - Implement additional IEC 61174 default control settings
+  - Support pick report on text
+  - Support multiple spatial references
+  - Portrayal Settings
+    - Show viewing group layers not included in a display mode (e.g. S-101 text group layers) separately
+  - Rendering
+	- Improved support for SVGTiny
+    - Improved symbolized line algorithm/appearance
+	- Implement support for masked (truncated) edges
+	- Render associated curves
+	- Support ArcByRadius for radii with geographicCRS
+	- Evaluate drawing instruction dependencies (id / parent id)
+  - Legend
+    - Show buoyage system (S-101 NavigationalSystemOfMarks)
+	- Show Displayed Safety Contour
+	- Show NavigationalSystemOfMarks
+  - Enhance busy indicator
+      - Show when generating portrayal
+	  - Countdown while loading datasets
+* Fixes:
+  - All projections are now scaled accurately
+  - Text placement/alignment on curves
+  - Application crash
+    - Unimplimented pick report functionality
+    - Pick report on WRECKS04
+	- Editing a route with no speed
+* Many other minor fixes and enhancements
+
+1.0.1.0
+* Initial release

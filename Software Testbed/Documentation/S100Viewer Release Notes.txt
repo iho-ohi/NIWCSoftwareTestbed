@@ -1,0 +1,267 @@
+S-100 Viewer Release Notes
+
+2.1.0.0
+
+* Enhancements
+
+ Notes:
+
+  Catalog pickers
+    - Install datasets from CATALOG.XML
+    - pick feature/portrayal catalogs found in catalog discovery metadata by default (allows custom choices still)
+ 
+  HDF5 Group selection
+    - Select time groups from temporal datasets
+    - Select Z-Index from HDF5 with Vertical data
+
+  Features listing
+    - On/Off checkboxes
+    - Highlights still appear if selected in features listing
+    - Checkbox enabled when portrayal is on for current settings
+    - Attribute search filter option
+
+  ISO-8211 and GML time input
+    - Time Selection On/Off. Off means all date-dependent features will show in portrayal
+    - Features checkboxes disabled when Time Selection On, and time state relevant to feature portrayal
+
+  Decryption capabilites for:
+    - S-100 Documentation MasterKey/Manufacturer id
+    - Public S-63 key used for sea trials testing
+    - S-64 Encrypted datasets keys
+    - Hardware locked encryption forced, so UserPermit issued during registration must be found in PERMIT.TXT or PERMIT.XML dataset keys
+
+Fixes:
+
+  GML
+    - Support S100GML v4.0 based datasets
+  
+  Lua Portrayal
+    - Support SymbolFill drawing commands
+
+2.0.0.0 
+*** CURRENT LIMITATIONS:
+  -S-102 v2.0.x datasets will not show due to no symbol files in PortrayalCatalog
+  -Temporal support is limited so S-124/S-111 data shown are not controllable by time set
+
+  Notes:         
+    Registration:
+      - Added a three day time limited trial, after which time, the user will be required to request a free key from NIWC.
+
+    PortrayalSettings:
+    - DisplayPlanes no longer case sensitive
+
+    PC and FC loading:
+      - Added Multi-PortrayalCatalog version support 
+        -Support included for S-101 (v4.0 upward), S-102 (v2.0 upward), S-111 (v1.0 upward)      
+        - Added S-100 v4.0 to v5.x FC and PC schemas
+
+    Pick Report:
+      - Support for S-104
+
+    S-104:
+      - Water level adjustment for S-102 features
+      - *No portrayal catalog required for install + water level adjustment
+
+    S-111:
+        -Implemented Irregular gridded data thinning algorithm 
+
+    S-124:
+        -Added S-124 support
+    
+  Fixes:
+    Pick Report:
+      - Fixed Irregular gridded pick reports (S-111)
+
+    S-111:
+      - Fix Feature attribute parsing on SW and NE coordinate values to support S-111 irregular grid import
+      - Fix surface current symbol scale
+
+    GML-based Products:
+      - Change to better support GML datasets when specific boundedBy GML attributes are not specified. 
+
+1.9.2.0
+ *** CURRENT LIMITATIONS:
+  Limited HDF5 and GML support.
+  Only base ISO-8211 dataset (.000 files) are loaded - updates (.NNN files) are not applied.
+  Metadata / catalogs (.CAT files) are not loaded.
+
+  Notes:
+	- Updated to S-100 v5.0 schemas. Older schemas are no longer supported.
+	- Improved line rendering.
+	- Implement support for italic text.
+
+  Fixes:
+  - Line suppression when drawing instruction uses spatial reference (coastline was sometimes suppressed)
+  - Chart rendering at anti-meridian
+  - Fixed broken shortcut links and .NET 5.0 runtime check
+	
+1.9.1.0
+  Notes:
+	- Remove unused import functions from new tab page
+	- Support viewing group layers not assigned to a display mode (S-101 text groups)
+	- ISO-8211 reader now sets both sides of feature associations
+	- Improved rendering of complex line styles
+	- Implement rendering support for ArcByRadius with radii in geographicCRS
+	- Improved support for TinySVG
+	- Implement rendering support for masked (truncated) edges
+	- Projections are now scaled accurately
+	- Re-implement validation. Validation of feature associations is disabled due to S-101 FC multiplicity issues
+  - HDF5 data coding format type 2 and 3 supported (S100_GridCoverage and S100_PointCoverage)
+  - HatchFill portrayal support for S-129
+	- Other minor updates and bug fixes
+
+1.9.0.0
+  Notes:
+  - Uses updated portrayal schemas approved at S-100WG5
+        Supports latest NIWC S-101 portrayal catalogue
+  - Fixes for regional number formats
+  - Digit grouping and decimal symbols
+  - Fix issue with display of portrayal text
+  - commas, ampersand, colon, and semicolon punctuation
+  - Other minor updates and bug fixes
+ 
+1.8.0.1
+  Notes:
+	Fixes for regional number formats (support changes to digit grouping symbol and decimal symbol)
+	Fixes for proper display of portrayal text with commas, ampersand, colon and semicolon punctuation.
+	Use IDs instead of names when passing context parameters to portrayal.
+	Fix issue with unencoded optional attribute values.
+	Update the S-101 portrayal catalogue to version 1.0.7.  Changes for each new version are listed below.
+
+  S-101 Portrayal Catalogue:
+	- The provided portrayal catalogue is updated to version 1.0.4. This fixes a bug in the DEPARE03 rules file relating to incorrect handling of scaled decimals.  This fixes a bug in the LITDSN02 rules file related to handling unknown lightCharacteristic values.
+	- The provided portrayal catalogue is updated to version 1.0.5. This fixes a bug in the type checking for the CreateFeatureType, CreateInformationType, CreateFeatureAssociation, and CreateInformationAssociation Portrayal API functions.
+	- The provided portrayal catalogue is updated to version 1.0.6. This fixes a captilization issue with SeaplaneLandingArea in portrayal_catalogue.xml.
+	- The provided portrayal catalogue is updated to version 1.0.7. This fixes a bug with flattening spatial associations.
+
+1.8.0.0
+  Notes:
+	Miscellaneous bug fixes and improvements.
+	Changes to support portrayal catalogue changes listed below.
+
+  S-101 Portrayal Catalogue:
+	- The provided portrayal catalogue is updated to version 1.0.3. This fixes a bug in the RadioCallingInPoint rules file.
+
+  S-102 Portrayal Catalogue:
+	- Fixed IDs to be compliant with S-100 standard.
+	- Implemented support for UTM datasets.
+
+1.7.0.0
+  Notes:  
+	- Partial support for S-102 and S-111 portrayal
+	- Now requires .NET Framework 4.7.2
+	- Supports changes made to the S-101 Portrayal Catalogue
+	- Removed “Globals” watch window from Lua debugger
+	- Implemented clipSymbols for AreaFillReference drawing instruction
+	- Emit feature and information associations in XSLT input schema
+
+  S-101 Portrayal Catalogue:
+	- Updated portrayal_catalogue.xml to add unreferenced rule files
+	- Updated portrayal_catalogue.xml to move “fonts” element to correct location
+	- Updated portrayal_catalogue.xml to add CSS (Cascading Style Sheet) files
+	- Updated portrayal_catalogue.xml to change language codes from "en" to "eng"
+  - Added portrayal rules for LocalDirectionOfBuoyage
+	- Use updated codes from S-101FC_1.0.0_20190409 for looking up the NauticalInformation and AdditionalInformation information associations
+	- Use codes instead of full objects for bound roles, information associations and feature associations
+	- Use spatial associations instead of direct points for start and end points of curves
+	- Portray QualityOfBathymetricData using S-52 symbols.  Symbols are centered and drawn 5mm tall
+	- Add first chance error handling to Lua debugging interface
+	
+  S-102 Portrayal Catalogue:
+	- Sample S-102 Lua portrayal catalogue included
+ 
+1.6.0.0
+  Notes:
+     - Continued refinement of Lua S-101 portrayal
+     - ESRI S-101 Converter version 1.0.0.15 must be used
+     - Limited S-111 support.  Files available at: ftp://ocsftp.ncd.noaa.gov/OFS_Data
+  
+1.5.0.0
+  Notes:
+     This release is intended to support manufacturer evaluation of the Lua S-101 portrayal in conjunction with the draft S-100 Standard 	Parts 9A and 13.
+
+1.4.0.0
+  Notes:
+    This release is intended to support manufacturer evaluation of the Lua S-101 portrayal, especially in terms of performance.
+	  - Both XSLT and Lua portrayal catalogues are supplied - be sure to use the appropriate catalogue when evaluating performance.
+      - Use the "Show Logs" button (up arrow) next to the "Error(s)" indicator to show the logs, then select "Performance". This will show a detailed timing analysis of each step in the Lua portrayal. Note that the "Render" times should be ignored as they are not part of the portrayal.
+	  - Performance considerations:
+	    * The drawing instructions for Lua portrayal scripts are cached in a SQLite database file.  To disable or enable this feature, select "Portrayal/Cache Enabled" from the main menu bar.
+		* The drawing cache can be cleared by selecting "Portrayal/Clear Cache" from the main menu bar.
+		* The initial portrayal generation after loading a dataset the first time should be interpreted as the amount of time the hosts dataset installer would use to pre-generate a portrayal.  This time can also be determined by clearing or disabling the cache.
+		* The performance tab reports the elapsed times for different parts of the portrayal process as follows:
+		  o Portrayal Total   -- This reports the overall time spent generating the drawing instructions for the current dataset.  These times don't include rendering the drawing instructions.  This value is the addition of the following two times.
+		  o Lua Code - Total  -- This reports the overall time spent executing Lua code.
+		  o Host Code - Total -- This reports the overall time spent executing Host code (i.e. the S-100 Viewer program itself).
+		* The effort in this release has been directed at optimizing the Lua code.  The host code is strictly written with correctness and simplicity in mind and the performance timings should not be taken as indicative of the time needed in a production application.
+		* Changes to context parameters should be used to evaluate the amount of time needed to re-generate cached drawing instructions.
+  Changes:
+    Reworked Lua portrayal to follow changes in "S-100 Scripting" and "S-100 Lua Portrayal" proposed standards.
+      Note: These changes are still in a state of flux and will result in minor Lua script file changes in future versions of S-100 Viewer.
+    Lua portrayal now uses a command based model for drawing instructions vs. the descriptive model used in the previous version.
+      - The command based model follows the concepts in the descriptive model used by XSLT portrayal.
+      - The command based model is easier for the host to parse and execute.
+	  - The command based model makes it easier to implement and test scripts.
+    Replaced the Lua 5.3 interpreter with LuaJIT for increased performance.
+      - Lua scripts are now based on the Lua 5.1 standard instead of the 5.3 standard.
+
+1.3.0.0
+  Rewrite to support generic browsing of S-100 products, not just S-101
+  Added some dataset validation during dataset loading (incomplete)
+	- ISO-8211 encoding: reports when encoding deviates from S-100 (e.g. point reference missing from curve record)
+	- Feature Catalogue validation: checks for missing required elements (e.g. a required attribute is not present on a feature)
+	- Validation results are shown during loading, and are also available in the diagnostic tab after the dataset has loaded
+  Added support for Lua portrayal rule files (when prompted for a portrayal catalogue during dataset loading, select one that contains Lua rule files)
+  User Interface:
+    Refactored to mimic modern web browser UI
+    Multiple datasets and feature catalogues can now be loaded, each will display in a separate tab
+		- Note: Multiple views of the same dataset can be opened, for instance to allow comparison of two portrayal catalogues
+	Added calibration function to assist in accurate review of portrayal symbology
+	Added ability to show multiple views:
+		- ISO 8211 Dataset Browser (load dataset, select cancel when prompted for a feature catalogue)
+		- ISO 8211 / S-100 Dataset Browser (load dataset, select cancel when prompted for a portrayal catalogue)
+		- ISO 8211 / S-100 Dataset Browser with Portrayal
+		- Feature Catalogue Browser
+	Portrayal tab now supports all portrayal elements (Viewing groups, etc)
+	Dataset browsers are now provided for encoded data (ISO-8211 Browser) and GFM data (S-100 Browser)
+	An ISO-8211 dump view will be displayed if an attempt is made to load an invalid ISO-8211 encoded dataset
+  Misc:
+    Improved logging
+
+1.2.0.0
+  Chart:
+    Set projection to either Mercator or Polar Stereographic based on bounding box of DataCoverages
+    Set initial display scale from minimumDisplayScale in all DataCoverages
+	Added symbolized line support
+    Now uses font specified by portrayal drawing instructions
+    Set initial focal coordinate based on bounding box of first DataCoverage
+  User Interface:
+    Radar settings moved from Mariner Settings to chart toolbar (Radar is not a portrayal context element)
+    Cursor position display now supports multiple coordinate formats (Click to change)
+    Use S-101 scale values when zooming, and allow scale selection from S-101 enumerated scale values
+    Modified appearance of selected item / spatial filter highlight
+    Improved log information
+    Provide visual cues while loading / transforming / drawing
+    Enhanced toolbar indicator for dataset warnings / errors
+    Toolbar now supports docking
+  Misc:
+    Detect invalid dataCoverage geometries
+    Warn if DataCoverage is missing from dataset
+
+1.1.0.0
+  Added double-click pan/zoom (see toolbar zoom/pan tooltips)
+  Shows most recent log tab entries on top
+  Added toolbar indicator for dataset warnings / errors
+  Screenshot no longer changes default dataset load folder
+  Datasets containing attribute types not present in feature catalog no longer cause crash
+  Highlight is now cleared when dataset is closed
+  Renders chart correctly if GetSvg() generates exceptions
+  Fixed crash when minimumDisplayScale dataset attribute is not present
+  Reversed order of zoom buttons
+  The value for SAFETY_CONTOUR in Mariner Settings no longer present drop down list and instead provides free form data entry
+  TopLevelRule renamed to TopLevelTemplate in Mariner Settings
+  Several log message types have been changed from Errors to Warnings
+  Fewer first chance exception messages show up in Warnings tab
+
+1.0.0.0
+  Initial Release
