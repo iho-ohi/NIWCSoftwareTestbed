@@ -26,7 +26,7 @@ Including screenshots and/or datasets is helpful.
 
 
 ## Naval Information Warfare Center- Atlantic
-NIWC-LANT
+NIWC-LANT ![alt text](image.png)
 Email: NIWCTestbed <NIWCTestbed@us.navy.mil>
 
 Repository contains latest release of NIWC's Software Testbed: 
