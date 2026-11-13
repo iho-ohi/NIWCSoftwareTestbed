@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:portrayalCatalog xmlns:pc="http://www.iho.int/S100PortrayalCatalog/5.2" xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-122" version="2.0.0">
+
+  <pixmaps/>
+
+  <colorProfiles>
+    <colorProfile id="1">
+      <description>
+        <name>Color Profile</name>
+        <description>Color Profile</description>
+        <language>eng</language>
+      </description>
+      <fileName>colorProfile.xml</fileName>
+      <fileType>ColorProfile</fileType>
+      <fileFormat>XML</fileFormat>
+    </colorProfile>
+  </colorProfiles>
+
+  <symbols>
+    <symbol id="MPAPoint">
+      <description>
+        <name>MPAPoint</name>
+        <description></description>
+        <language>eng</language>
+      </description>
+      <fileName>MPAPoint.svg</fileName>
+      <fileType>Symbol</fileType>
+      <fileFormat>SVG</fileFormat>
+    </symbol>
+    <symbol id="MPAInfare">
+      <description>
+        <name>MPAInfare</name>
+        <description></description>
+        <language>eng</language>
+      </description>
+      <fileName>MPAInfare.svg</fileName>
+      <fileType>Symbol</fileType>
+      <fileFormat>SVG</fileFormat>
+    </symbol>
+    <symbol id="MPAVTS">
+      <description>
+        <name>MPAVTS</name>
+        <description></description>
+        <language>eng</language>
+      </description>
+      <fileName>MPAVTS.svg</fileName>
+      <fileType>Symbol</fileType>
+      <fileFormat>SVG</fileFormat>
+    </symbol>
+    <symbol id="USRPNT01">
+      <description>
+        <name>Small Circle</name>
+        <description>Small circle symbol for point drawing instruction.</description>
+        <language>eng</language>
+      </description>
+      <fileName>USRPNT01.svg</fileName>
+      <fileType>Symbol</fileType>
+      <fileFormat>SVG</fileFormat>
+    </symbol>
+    <symbol id="QUESMRK1">
+      <description>
+        <name>QUESMRK1</name>
+        <description>object which is not sufficiently described to be symbolized, or for which no symbol exists in the symbol library</description>
+        <language>eng</language>
+      </description>
+      <fileName>QUESMRK1.svg</fileName>
+      <fileType>Symbol</fileType>
+      <fileFormat>SVG</fileFormat>
+    </symbol>
+  </symbols>
+
+  <styleSheets>
+    <styleSheet id="daySvgStyle">
+      <description>
+        <name>Day</name>
+        <description>CSS file for day palette</description>
+        <language>eng</language>
+      </description>
+      <fileName>daySvgStyle.css</fileName>
+      <fileType>StyleSheet</fileType>
+      <fileFormat>CSS</fileFormat>
+    </styleSheet>
+    <styleSheet id="duskSvgStyle">
+      <description>
+        <name>Dusk</name>
+        <description>CSS file for dusk palette</description>
+        <language>eng</language>
+      </description>
+      <fileName>duskSvgStyle.css</fileName>
+      <fileType>StyleSheet</fileType>
+      <fileFormat>CSS</fileFormat>
+    </styleSheet>
+    <styleSheet id="nightSvgStyle">
+      <description>
+        <name>Night</name>
+        <description>CSS file for night palette</description>
+        <language>eng</language>
+      </description>
+      <fileName>nightSvgStyle.css</fileName>
+      <fileType>StyleSheet</fileType>
+      <fileFormat>CSS</fileFormat>
+    </styleSheet>
+  </styleSheets>
+
+  <lineStyles/>
+  <areaFills/>
+  <fonts/>
+
+  <viewingGroups>
+    <viewingGroup id="12210">
+      <description>
+        <name>12210</name>
+        <description></description>
+        <language>eng</language>
+      </description>
+    </viewingGroup>
+  </viewingGroups>
+
+  <foundationMode/>
+  <viewingGroupLayers/>
+  <displayModes/>
+
+  <displayPlanes>
+    <displayPlane id="OverRADAR" order="1">
+      <description>
+        <name>Over radar</name>
+        <description>Content displayed on top of Radar image</description>
+        <language>eng</language>
+      </description>
+    </displayPlane>
+    <displayPlane id="UnderRADAR" order="-1">
+      <description>
+        <name>Under radar</name>
+        <description>Content displayed underneath Radar image</description>
+        <language>eng</language>
+      </description>
+    </displayPlane>
+  </displayPlanes>
+
+  <context/>
+
+  <rules>
+    <ruleFile id="main">
+      <description>
+        <name>main</name>
+        <description>main</description>
+        <language>eng</language>
+      </description>
+      <fileName>main.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>TopLevelTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="attributeRules">
+      <description>
+        <name>attributeRules</name>
+        <description>attributeRules</description>
+        <language>eng</language>
+      </description>
+      <fileName>attributeRules.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="simpleLineStyle">
+      <description>
+        <name>simpleLineStyle</name>
+        <description>simpleLineStyle</description>
+        <language>eng</language>
+      </description>
+      <fileName>simpleLineStyle.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="textStyle">
+      <description>
+        <name>textStyle</name>
+        <description>textStyle</description>
+        <language>eng</language>
+      </description>
+      <fileName>textStyle.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="Default">
+      <description>
+        <name>Default</name>
+        <description>Default</description>
+        <language>eng</language>
+      </description>
+      <fileName>Default.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="DataCoverage">
+      <description>
+        <name>DataCoverage</name>
+        <description>Data Coverage</description>
+        <language>eng</language>
+      </description>
+      <fileName>DataCoverage.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="QualityOfNonBathymetricData">
+      <description>
+        <name>QualityOfNonBathymetricData</name>
+        <description>Quality Of NonBathymetric Data</description>
+        <language>eng</language>
+      </description>
+      <fileName>QualityOfNonBathymetricData.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="InformationArea">
+      <description>
+        <name>InformationArea</name>
+        <description>Information Area</description>
+        <language>eng</language>
+      </description>
+      <fileName>InformationArea.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="VesselTrafficServiceArea">
+      <description>
+        <name>VesselTrafficServiceArea</name>
+        <description>Vessel Traffic Service Area</description>
+        <language>eng</language>
+      </description>
+      <fileName>VesselTrafficServiceArea.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="MarineProtectedArea">
+      <description>
+        <name>MarineProtectedArea</name>
+        <description>Marine Protected Area</description>
+        <language>eng</language>
+      </description>
+      <fileName>MarineProtectedArea.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="RestrictedArea">
+      <description>
+        <name>RestrictedArea</name>
+        <description>Restricted Area</description>
+        <language>eng</language>
+      </description>
+      <fileName>RestrictedArea.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+    <ruleFile id="TextPlacement">
+      <description>
+        <name>TextPlacement</name>
+        <description>Text Placement</description>
+        <language>eng</language>
+      </description>
+      <fileName>TextPlacement.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+  </rules>
+  <viewingGroups>
+      <viewingGroup id="26">
+        <description>
+          <name>Text: Geographic Names</name>
+          <description>Names of Anchorages, Bridges, Buildings, Docks, etc.</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
+      <!-- A, B - INFORMATION ABOUT THE CHART DISPLAY -->
+      <!-- 21000's: Information about the Chart Display -->
+      <viewingGroup id="21010">
+        <description>
+          <name>Unknown object (magenta question mark)</name>
+          <description>Standard: A, B - Information about the chart display</description>
+          <language>eng</language>
+        </description>
+      </viewingGroup>
+
+      <!-- 31000's: Information about the Chart Display -->
+      <viewingGroup id="31010">
+        <description>
+            <name>Quality of survey, quality of non-bathymetric data, sounding datum, vertical datum</name>
+            <description>Other: A, B - Information about the chart display</description>
+            <language>eng</language>
+        </description>
+      </viewingGroup>
+      <viewingGroup id="31020">
+        <description>
+          <name>information area or nautical publication (M_NPUB)</name>
+          <description>Other: A, B - Information about the chart display</description>
+          <language>eng</language>
+        </description>
+    </viewingGroup>
+    <viewingGroup id="31040">
+      <description>
+        <name>dataCoverage</name>
+        <description>Other: A, B - Information about the chart display</description>
+        <language>eng</language>
+      </description>
+    </viewingGroup>
+    <viewingGroup id="36050">
+      <description>
+         <name>Contiguous zone (CONZNE), exclusive economic zone (EXEZNE), national territorial area (NATARE), territorial sea (TESARE), territorial sea baseline (STSLNE), administration area (ADMARE)</name>
+         <description>Other: N - Special areas</description>
+         <language>eng</language>
+      </description>
+   </viewingGroup>
+   <!-- Danger highlight and Indication highlights -->
+    <viewingGroup id="53010">
+      <description>
+        <name>Safety Contour Highlight</name>
+        <description>Used to turn on or off the graphical highlighting of alerts triggered by the safety contour.</description>
+        <language>eng</language>
+      </description>
+    </viewingGroup>
+  </viewingGroups>
+
+  <viewingGroupLayers>
+    <viewingGroupLayer id="10">      <!-- S-52: 10 Miscellaneous (Standard) and 101 Alert Highlights -->
+      <description>
+         <name>Miscellaneous (Standard)</name>
+         <description>Standard Display elements</description>
+         <language>eng</language>
+      </description>
+      <viewingGroup>21010</viewingGroup>
+      <viewingGroup>21060</viewingGroup>
+      <viewingGroup>24010</viewingGroup>
+      <viewingGroup>24020</viewingGroup>
+      <viewingGroup>24050</viewingGroup>
+      <viewingGroup>25001</viewingGroup>
+      <viewingGroup>26200</viewingGroup>
+      <viewingGroup>26210</viewingGroup>
+      <viewingGroup>28010</viewingGroup>
+      <viewingGroup>28020</viewingGroup>
+   </viewingGroupLayer>
+
+    <viewingGroupLayer id="18">
+      <description>
+        <name>Miscellaneous (Other)</name>
+        <description>Other Display elements</description>
+        <language>eng</language>
+      </description>
+      <viewingGroup>31010</viewingGroup>
+      <viewingGroup>31020</viewingGroup>
+      <viewingGroup>31040</viewingGroup>
+      <viewingGroup>32010</viewingGroup>
+      <viewingGroup>32030</viewingGroup>
+      <viewingGroup>32050</viewingGroup>
+      <viewingGroup>32070</viewingGroup>
+      <viewingGroup>32200</viewingGroup>
+      <viewingGroup>32220</viewingGroup>
+      <viewingGroup>32240</viewingGroup>
+      <viewingGroup>32250</viewingGroup>
+      <viewingGroup>32270</viewingGroup>
+      <viewingGroup>32400</viewingGroup>
+      <viewingGroup>32410</viewingGroup>
+      <viewingGroup>32440</viewingGroup>
+      <viewingGroup>36010</viewingGroup>
+      <viewingGroup>36020</viewingGroup>
+      <viewingGroup>36040</viewingGroup>
+      <viewingGroup>36050</viewingGroup>
+      <viewingGroup>36060</viewingGroup>
+      <viewingGroup>38010</viewingGroup>
+      <viewingGroup>38030</viewingGroup>
+      <viewingGroup>38200</viewingGroup>
+      <viewingGroup>38210</viewingGroup>
+  </viewingGroupLayer>
+ </viewingGroupLayers>
+</pc:portrayalCatalog>

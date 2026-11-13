@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S125:Dataset xmlns:S125="http://www.iho.int/S125/1.0" xmlns:S100="http://www.iho.int/s100gml/5.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.iho.int/S125/1.0 https://schemas.s100dev.net/schemas/S125/1.0.0/S125.xsd" gml:id="S125.SAMPLE.CAHAL">
+    <gml:boundedBy>
+        <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+            <gml:lowerCorner>44.5762 -63.5744</gml:lowerCorner>
+            <gml:upperCorner>44.6301 -63.5289</gml:upperCorner>
+        </gml:Envelope>
+    </gml:boundedBy>
+    <S100:DatasetIdentificationInformation>
+        <S100:encodingSpecification>S-100 Part 10b</S100:encodingSpecification>
+        <S100:encodingSpecificationEdition>1.0</S100:encodingSpecificationEdition>
+        <S100:productIdentifier>S-125</S100:productIdentifier>
+        <S100:productEdition>1.0</S100:productEdition>
+        <S100:applicationProfile>1</S100:applicationProfile>
+        <S100:datasetFileIdentifier>125SAMPLE_CAHAL.GML</S100:datasetFileIdentifier>
+        <S100:datasetTitle>S-125 sample - Marine Aids to Navigation, Halifax approaches</S100:datasetTitle>
+        <S100:datasetReferenceDate>2026-09-10</S100:datasetReferenceDate>
+        <S100:datasetLanguage>eng</S100:datasetLanguage>
+        <S100:datasetAbstract>Sample S-125 dataset exercising the buoy, beacon, light, topmark, virtual AIS and AtoN status portions of the feature catalogue.</S100:datasetAbstract>
+        <S100:datasetTopicCategory>transportation</S100:datasetTopicCategory>
+        <S100:datasetPurpose>base</S100:datasetPurpose>
+        <S100:updateNumber>0</S100:updateNumber>
+    </S100:DatasetIdentificationInformation>
+    <S125:members>
+        <S125:DataCoverage gml:id="DC.1">
+            <S125:maximumDisplayScale>45000</S125:maximumDisplayScale>
+            <S125:minimumDisplayScale>180000</S125:minimumDisplayScale>
+            <S125:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="DC.1.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>44.6 -63.55</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S125:geometry>
+        </S125:DataCoverage>
+        <S125:LateralBuoy gml:id="BUOY.1">
+            <S125:featureName>
+                <S125:language>eng</S125:language>
+                <S125:name>Halifax Approach No. 1</S125:name>
+            </S125:featureName>
+            <S125:statusPart xlink:href="#ASINF.1"/>
+            <S125:atoNNumber>CA-H-0001</S125:atoNNumber>
+            <S125:buoyShape code="2">Can</S125:buoyShape>
+            <S125:colour code="4">Green</S125:colour>
+            <S125:colourPattern code="7">Single Colour</S125:colourPattern>
+            <S125:marksNavigationalSystemOf code="2">IALA B</S125:marksNavigationalSystemOf>
+            <S125:status code="1">Permanent</S125:status>
+            <S125:categoryOfLateralMark code="1">Port-Hand Lateral Mark</S125:categoryOfLateralMark>
+            <S125:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="BUOY.1.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>44.5871 -63.5442</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S125:geometry>
+        </S125:LateralBuoy>
+        <S125:LateralBuoy gml:id="BUOY.2">
+            <S125:featureName>
+                <S125:language>eng</S125:language>
+                <S125:name>Halifax Approach No. 2</S125:name>
+            </S125:featureName>
+            <S125:theStatusIndication xlink:href="#ASI.2"/>
+            <S125:atoNNumber>CA-H-0002</S125:atoNNumber>
+            <S125:buoyShape code="1">Conical</S125:buoyShape>
+            <S125:colour code="3">Red</S125:colour>
+            <S125:colourPattern code="7">Single Colour</S125:colourPattern>
+            <S125:marksNavigationalSystemOf code="2">IALA B</S125:marksNavigationalSystemOf>
+            <S125:status code="1">Permanent</S125:status>
+            <S125:categoryOfLateralMark code="2">Starboard-Hand Lateral Mark</S125:categoryOfLateralMark>
+            <S125:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="BUOY.2.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>44.5884 -63.5361</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S125:geometry>
+        </S125:LateralBuoy>
+        <S125:CardinalBuoy gml:id="BUOY.3">
+            <S125:featureName>
+                <S125:language>eng</S125:language>
+                <S125:name>Thrumcap North Cardinal</S125:name>
+            </S125:featureName>
+            <S125:theStatusIndication xlink:href="#ASI.4"/>
+            <S125:atoNNumber>CA-H-0003</S125:atoNNumber>
+            <S125:child xlink:href="#TOP.1"/>
+            <S125:buoyShape code="4">Pillar</S125:buoyShape>
+            <S125:colour code="2">Black</S125:colour>
+            <S125:colour code="6">Yellow</S125:colour>
+            <S125:colourPattern code="1">Horizontal Stripes</S125:colourPattern>
+            <S125:marksNavigationalSystemOf code="2">IALA B</S125:marksNavigationalSystemOf>
+            <S125:status code="1">Permanent</S125:status>
+            <S125:categoryOfCardinalMark code="1">North Cardinal Mark</S125:categoryOfCardinalMark>
+            <S125:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="BUOY.3.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>44.6012 -63.5507</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S125:geometry>
+        </S125:CardinalBuoy>
+        <S125:Topmark gml:id="TOP.1">
+            <S125:parent xlink:href="#BUOY.3"/>
+            <S125:colour code="2">Black</S125:colour>
+            <S125:status code="1">Permanent</S125:status>
+            <S125:topmarkDaymarkShape code="13">2 Cones (Points Upward)</S125:topmarkDaymarkShape>
+            <S125:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="TOP.1.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>44.6012 -63.5507</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S125:geometry>
+        </S125:Topmark>
+        <S125:LateralBeacon gml:id="BCN.1">
+            <S125:featureName>
+                <S125:language>eng</S125:language>
+                <S125:name>Ives Knoll Beacon</S125:name>
+            </S125:featureName>
+            <S125:atoNNumber>CA-H-0011</S125:atoNNumber>
+            <S125:child xlink:href="#LGT.1"/>
+            <S125:beaconShape code="4">Lattice Beacon</S125:beaconShape>
+            <S125:colour code="4">Green</S125:colour>
+            <S125:colourPattern code="7">Single Colour</S125:colourPattern>
+            <S125:height>8.5</S125:height>
+            <S125:marksNavigationalSystemOf code="2">IALA B</S125:marksNavigationalSystemOf>
+            <S125:status code="1">Permanent</S125:status>
+            <S125:categoryOfLandmark code="17">Tower</S125:categoryOfLandmark>
+            <S125:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="BCN.1.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>44.6193 -63.5566</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S125:geometry>
+        </S125:LateralBeacon>
+        <S125:LightAllAround gml:id="LGT.1">
+            <S125:featureName>
+                <S125:language>eng</S125:language>
+                <S125:name>Ives Knoll Light</S125:name>
+            </S125:featureName>
+            <S125:parent xlink:href="#BCN.1"/>
+            <S125:height>9.1</S125:height>
+            <S125:status code="1">Permanent</S125:status>
+            <S125:colour code="4">Green</S125:colour>
+            <S125:valueOfNominalRange>7</S125:valueOfNominalRange>
+            <S125:rhythmOfLight>
+                <S125:lightCharacteristic code="2">Flashing</S125:lightCharacteristic>
+                <S125:signalPeriod>4</S125:signalPeriod>
+            </S125:rhythmOfLight>
+            <S125:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="LGT.1.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>44.6193 -63.5566</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S125:geometry>
+        </S125:LightAllAround>
+        <S125:VirtualAISAidToNavigation gml:id="VAIS.1">
+            <S125:featureName>
+                <S125:language>eng</S125:language>
+                <S125:name>Chebucto Head Virtual Port Lateral</S125:name>
+            </S125:featureName>
+            <S125:theStatusIndication xlink:href="#ASI.5"/>
+            <S125:atoNNumber>CA-H-0021</S125:atoNNumber>
+            <S125:mMSICode>993161001</S125:mMSICode>
+            <S125:status code="1">Permanent</S125:status>
+            <S125:virtualAISAidToNavigationType code="5">Port Lateral</S125:virtualAISAidToNavigationType>
+            <S125:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="VAIS.1.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>44.5762 -63.5289</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S125:geometry>
+        </S125:VirtualAISAidToNavigation>
+        <S125:AtonStatusIndication gml:id="ASI.1">
+            <S125:featureReference>
+                <S125:atoNNumber>CA-H-0031</S125:atoNNumber>
+            </S125:featureReference>
+            <S125:featureName>
+                <S125:language>eng</S125:language>
+                <S125:name>Status: Advance Notice of Change</S125:name>
+            </S125:featureName>
+            <S125:changeTypes code="1">Advance Notice of Change</S125:changeTypes>
+            <S125:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="ASI.1.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>44.6301 -63.5661</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S125:geometry>
+        </S125:AtonStatusIndication>
+        <S125:AtonStatusIndication gml:id="ASI.2">
+            <S125:featureReference>
+                <S125:atoNNumber>CA-H-0002</S125:atoNNumber>
+            </S125:featureReference>
+            <S125:featureName>
+                <S125:language>eng</S125:language>
+                <S125:name>Status: Discrepancy</S125:name>
+            </S125:featureName>
+            <S125:changeTypes code="2">Discrepancy</S125:changeTypes>
+            <S125:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="ASI.2.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>44.5884 -63.5361</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S125:geometry>
+        </S125:AtonStatusIndication>
+        <S125:AtonStatusIndication gml:id="ASI.3">
+            <S125:featureReference>
+                <S125:atoNNumber>CA-H-0033</S125:atoNNumber>
+            </S125:featureReference>
+            <S125:featureName>
+                <S125:language>eng</S125:language>
+                <S125:name>Status: Proposed Change</S125:name>
+            </S125:featureName>
+            <S125:changeTypes code="3">Proposed Change</S125:changeTypes>
+            <S125:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="ASI.3.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>44.6118 -63.5744</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S125:geometry>
+        </S125:AtonStatusIndication>
+        <S125:AtonStatusIndication gml:id="ASI.4">
+            <S125:featureReference>
+                <S125:atoNNumber>CA-H-0003</S125:atoNNumber>
+            </S125:featureReference>
+            <S125:featureName>
+                <S125:language>eng</S125:language>
+                <S125:name>Status: Temporary Change</S125:name>
+            </S125:featureName>
+            <S125:changeTypes code="4">Temporary Change</S125:changeTypes>
+            <S125:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="ASI.4.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>44.6012 -63.5507</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S125:geometry>
+        </S125:AtonStatusIndication>
+        <S125:AtonStatusIndication gml:id="ASI.5">
+            <S125:featureReference>
+                <S125:atoNNumber>CA-H-0021</S125:atoNNumber>
+            </S125:featureReference>
+            <S125:featureName>
+                <S125:language>eng</S125:language>
+                <S125:name>Status: Permanent Change</S125:name>
+            </S125:featureName>
+            <S125:changeTypes code="5">Permanent Change</S125:changeTypes>
+            <S125:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="ASI.5.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>44.5762 -63.5289</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S125:geometry>
+        </S125:AtonStatusIndication>
+        <S125:AtonStatusInformation gml:id="ASINF.1">
+            <S125:changeDetails>
+                <S125:floatingAtonChange code="7">Buoy off Position</S125:floatingAtonChange>
+            </S125:changeDetails>
+            <S125:changeTypes code="2">Discrepancy</S125:changeTypes>
+        </S125:AtonStatusInformation>
+    </S125:members>
+</S125:Dataset>

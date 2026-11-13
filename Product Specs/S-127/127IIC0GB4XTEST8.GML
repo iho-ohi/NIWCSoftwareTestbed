@@ -1,0 +1,616 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<S127:Dataset xmlns:S127="http://www.iho.int/S127/2.0" xmlns:S100="http://www.iho.int/s100gml/5.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.iho.int/S127/2.0 https://schemas.s100dev.net/schemas/S127/2.0.0/20251207/127.xsd" gml:id="JS.S127.TEST">
+    <gml:boundedBy>
+        <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+            <gml:lowerCorner>60.240411026263075 -32.67189433473476</gml:lowerCorner>
+            <gml:upperCorner>61.35754135390603 -32.109032515806966</gml:upperCorner>
+        </gml:Envelope>
+    </gml:boundedBy>
+    <S100:DatasetIdentificationInformation>
+        <S100:encodingSpecification>S-100 Part 10b</S100:encodingSpecification>
+        <S100:encodingSpecificationEdition>1.0</S100:encodingSpecificationEdition>
+        <S100:productIdentifier>S-127</S100:productIdentifier>
+        <S100:productEdition>2.0</S100:productEdition>
+        <S100:applicationProfile>1</S100:applicationProfile>
+        <S100:datasetFileIdentifier>127IIC0GB4XTEST8.GML</S100:datasetFileIdentifier>
+        <S100:datasetTitle>Traffic management information</S100:datasetTitle>
+        <S100:datasetReferenceDate>2019-08-01</S100:datasetReferenceDate>
+        <S100:datasetLanguage>eng</S100:datasetLanguage>
+        <S100:datasetAbstract>.</S100:datasetAbstract>
+        <S100:datasetTopicCategory>transportation</S100:datasetTopicCategory>
+        <S100:datasetPurpose>base</S100:datasetPurpose>
+        <S100:updateNumber>0</S100:updateNumber>
+    </S100:DatasetIdentificationInformation>
+    <S127:members>
+        <S127:SignalStationWarning gml:id="C70fed692dfa06c151c9f4d889e7b4b19">
+            <S127:categoryOfSignalStationWarning code="4">Military Practice</S127:categoryOfSignalStationWarning>
+            <S127:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="C70fed692dfa06c151c9f4d889e7b4b19.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>61.265899119907054 -32.38505657573716</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S127:geometry>
+        </S127:SignalStationWarning>
+        <S127:RadioCallingInPoint gml:id="C5027e37325ce86ec093583d463392445">
+            <S127:trafficFlow code="3">One-Way</S127:trafficFlow>
+            <S127:orientationValue>118.3</S127:orientationValue>
+            <S127:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="C5027e37325ce86ec093583d463392445.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>60.8210722906941 -32.592642429369874</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S127:geometry>
+        </S127:RadioCallingInPoint>
+        <S127:DataCoverage gml:id="C5bdf6bccf21be5a5680df04759aa5bf4">
+            <S127:maximumDisplayScale>24999</S127:maximumDisplayScale>
+            <S127:minimumDisplayScale>1000000</S127:minimumDisplayScale>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="C5bdf6bccf21be5a5680df04759aa5bf4.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.240411026263075 -32.109032515806966 60.240411026263075 -32.67189433473476 61.35754135390603 -32.67189433473476 61.35754135390603 -32.109032515806966 60.240411026263075 -32.109032515806966</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:DataCoverage>
+        <S127:MilitaryPracticeArea gml:id="Cc0f44879dc0d4eae7b3f0b3e801e373c">
+            <S127:categoryOfMilitaryPracticeArea code="3">Submarine Exercise Area</S127:categoryOfMilitaryPracticeArea>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="Cc0f44879dc0d4eae7b3f0b3e801e373c.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>61.176933754064464 -32.537039075718255 61.176933754064464 -32.58787642762831 61.215061767997 -32.58787642762831 61.215061767997 -32.537039075718255 61.176933754064464 -32.537039075718255</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:MilitaryPracticeArea>
+        <S127:CautionArea gml:id="Cd9e4749123d669f07966fc8d699e536c">
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="Cd9e4749123d669f07966fc8d699e536c.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.30796399265688 -32.15271517605453 60.30796399265688 -32.214777972034696 60.39437450090619 -32.214777972034696 60.39437450090619 -32.15271517605453 60.30796399265688 -32.15271517605453</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:CautionArea>
+        <S127:ConcentrationOfShippingHazardArea gml:id="C0d10953461eb8b48b51a92e7a6e161cd">
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="C0d10953461eb8b48b51a92e7a6e161cd.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.4182448070524 -32.1522377699316 60.4182448070524 -32.21668759652639 60.4927201622286 -32.21668759652639 60.4927201622286 -32.1522377699316 60.4182448070524 -32.1522377699316</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:ConcentrationOfShippingHazardArea>
+        <S127:LocalPortBroadcastServiceArea gml:id="Ce4b0f5782c1fef463f42d0eb10d14a46">
+            <S127:requirementsForMaintenanceOfListeningWatch>none</S127:requirementsForMaintenanceOfListeningWatch>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="Ce4b0f5782c1fef463f42d0eb10d14a46.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.62782609501619 -32.15844404952962 60.62782609501619 -32.21191353529715 60.68177298690664 -32.21191353529715 60.68177298690664 -32.15844404952962 60.62782609501619 -32.15844404952962</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:LocalPortBroadcastServiceArea>
+        <S127:ISPSCodeSecurityLevel gml:id="C3916e6bab8870af31e5783a5110d38aa">
+            <S127:iSPSLevel code="2">ISPS Level 2</S127:iSPSLevel>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="C3916e6bab8870af31e5783a5110d38aa.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.516590468374815 -32.15366998830038 60.516590468374815 -32.21716500264932 60.584382137830076 -32.21716500264932 60.584382137830076 -32.15366998830038 60.516590468374815 -32.15366998830038</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:ISPSCodeSecurityLevel>
+        <S127:MilitaryPracticeArea gml:id="C06c94e38842520f5ae7c08d5af97a899">
+            <S127:categoryOfMilitaryPracticeArea code="3">Submarine Exercise Area</S127:categoryOfMilitaryPracticeArea>
+            <S127:categoryOfMilitaryPracticeArea code="2">Torpedo Exercise Area</S127:categoryOfMilitaryPracticeArea>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="C06c94e38842520f5ae7c08d5af97a899.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.311663890109536 -32.247957697577945 60.311663890109536 -32.305246432328865 60.394374500906174 -32.305246432328865 60.394374500906174 -32.247957697577945 60.311663890109536 -32.247957697577945</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:MilitaryPracticeArea>
+        <S127:PilotBoardingPlace gml:id="Ce7084e370c7063adc4ec4ad4e0d623eb">
+            <S127:categoryOfPilotBoardingPlace code="3">Pilot Comes Out from Shore</S127:categoryOfPilotBoardingPlace>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="Ce7084e370c7063adc4ec4ad4e0d623eb.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.42122859532067 -32.247599642985755 60.42122859532067 -32.30703670528983 60.487468694876426 -32.30703670528983 60.487468694876426 -32.247599642985755 60.42122859532067 -32.247599642985755</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:PilotBoardingPlace>
+        <S127:PilotService gml:id="C884c539e292eacbbf0bd7399cc9db860">
+            <S127:remotePilot></S127:remotePilot>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="C884c539e292eacbbf0bd7399cc9db860.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.51754528062066 -32.2504640797233 60.51754528062066 -32.30667865069764 60.578772615885704 -32.30667865069764 60.578772615885704 -32.2504640797233 60.51754528062066 -32.2504640797233</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:PilotService>
+        <S127:PilotageDistrict gml:id="Ce69e6a2d8fa82103678365642a68fb7d">
+            <S127:communicationChannel>14</S127:communicationChannel>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="Ce69e6a2d8fa82103678365642a68fb7d.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.626393876647406 -32.2450932608404 60.626393876647406 -32.30667865069764 60.68404066599052 -32.30667865069764 60.68404066599052 -32.2450932608404 60.626393876647406 -32.2450932608404</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:PilotageDistrict>
+        <S127:VesselTrafficServiceArea gml:id="Cfb363be7b73ee0f371a59002b41e5305">
+            <S127:requirementsForMaintenanceOfListeningWatch>none</S127:requirementsForMaintenanceOfListeningWatch>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="Cfb363be7b73ee0f371a59002b41e5305.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.31703470899244 -32.595270652005404 60.31703470899244 -32.626063346934025 60.41351225639445 -32.626832762332505 60.413384965821734 -32.595519281443885 60.31703470899244 -32.595270652005404</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:VesselTrafficServiceArea>
+        <S127:PiracyRiskArea gml:id="C5a72c2b13ea24ac497c1cdd519d6580e">
+            <S127:restriction code="1">Anchoring Prohibited</S127:restriction>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="C5a72c2b13ea24ac497c1cdd519d6580e.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.30915750796418 -32.33210052674336 60.30915750796418 -32.41123059161807 60.385065081509154 -32.41123059161807 60.385065081509154 -32.33210052674336 60.30915750796418 -32.33210052674336</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:PiracyRiskArea>
+        <S127:PlaceOfRefuge gml:id="Ce85164e3257b279e49875b67fcdfa7e9">
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="Ce85164e3257b279e49875b67fcdfa7e9.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.42122859532067 -32.33066830837459 60.42122859532067 -32.39762451711473 60.48424620354668 -32.39762451711473 60.48424620354668 -32.33066830837459 60.42122859532067 -32.33066830837459</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:PlaceOfRefuge>
+        <S127:RadarRange gml:id="C902d0278b039b7fe3b9c2afc342c2558">
+            <S127:status code="1">Permanent</S127:status>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="C902d0278b039b7fe3b9c2afc342c2558.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.520409717358206 -32.329236090005814 60.520409717358206 -32.39798257170692 60.58235316180764 -32.39798257170692 60.58235316180764 -32.329236090005814 60.520409717358206 -32.329236090005814</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:RadarRange>
+        <S127:RestrictedArea gml:id="C294d7a0a2cf1c111157bd29b157e1c1d">
+            <S127:restriction code="3">Fishing Prohibited</S127:restriction>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="C294d7a0a2cf1c111157bd29b157e1c1d.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.30951556255638 -32.43056553959651 60.30951556255638 -32.48319956464891 60.38148453558722 -32.48319956464891 60.38148453558722 -32.43056553959651 60.30951556255638 -32.43056553959651</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:RestrictedArea>
+        <S127:RestrictedArea gml:id="Cf3529757208f57aa2aa53f17c95ad419">
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="Cf3529757208f57aa2aa53f17c95ad419.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.42158664991287 -32.43020748500432 60.42158664991287 -32.479619018726986 60.481739821401334 -32.479619018726986 60.481739821401334 -32.43020748500432 60.42158664991287 -32.43020748500432</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:RestrictedArea>
+        <S127:RouteingMeasure gml:id="C35cd5f17e404d0b6a289e7662504a9bb">
+            <S127:categoryOfRouteingMeasure code="5">Traffic Separation Scheme</S127:categoryOfRouteingMeasure>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="C35cd5f17e404d0b6a289e7662504a9bb.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.52542248164891 -32.42734304826677 60.52542248164891 -32.479619018726986 60.577698452109125 -32.479619018726986 60.577698452109125 -32.42734304826677 60.52542248164891 -32.42734304826677</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:RouteingMeasure>
+        <S127:ShipReportingServiceArea gml:id="C4c2c0b596347e8e41c7df9267dac1cf3">
+            <S127:requirementsForMaintenanceOfListeningWatch>none</S127:requirementsForMaintenanceOfListeningWatch>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="C4c2c0b596347e8e41c7df9267dac1cf3.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.62173916694889 -32.423762502344836 60.62173916694889 -32.48033512791137 60.68081817466078 -32.48033512791137 60.68081817466078 -32.423762502344836 60.62173916694889 -32.423762502344836</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:ShipReportingServiceArea>
+        <S127:SignalStationWarning gml:id="C3c8d2d4e988229cf8688614cc40301ea">
+            <S127:categoryOfSignalStationWarning code="3">Cable</S127:categoryOfSignalStationWarning>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="C3c8d2d4e988229cf8688614cc40301ea.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.30879945337199 -32.51542447794631 60.30879945337199 -32.574145431066 60.377903989665285 -32.574145431066 60.377903989665285 -32.51542447794631 60.30879945337199 -32.51542447794631</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:SignalStationWarning>
+        <S127:SignalStationTraffic gml:id="C2a6aabf98eb3137f6a4002add39a1418">
+            <S127:featureName>
+                <S127:language>eng</S127:language>
+                <S127:name>Signal Station</S127:name>
+            </S127:featureName>
+            <S127:categoryOfSignalStationTraffic code="1">Port Control</S127:categoryOfSignalStationTraffic>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="C2a6aabf98eb3137f6a4002add39a1418.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.42266081368945 -32.514350314169725 60.42266081368945 -32.569132666775296 60.47923343925598 -32.569132666775296 60.47923343925598 -32.514350314169725 60.42266081368945 -32.514350314169725</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:SignalStationTraffic>
+        <S127:UnderKeelClearanceAllowanceArea gml:id="C9c9e640cdb00a4b800fb4b29e9c8582c">
+            <S127:featureName>
+                <S127:language>eng</S127:language>
+                <S127:name>UKC Area 1</S127:name>
+            </S127:featureName>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="C9c9e640cdb00a4b800fb4b29e9c8582c.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.52506442705671 -32.51184393202438 60.52506442705671 -32.56411990248459 60.577698452109125 -32.56411990248459 60.577698452109125 -32.51184393202438 60.52506442705671 -32.51184393202438</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:UnderKeelClearanceAllowanceArea>
+        <S127:UnderKeelClearanceManagementArea gml:id="C56349778d1c45c01713ce368ae662d4a">
+            <S127:dynamicResource code="1">Static</S127:dynamicResource>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="C56349778d1c45c01713ce368ae662d4a.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.62281333072547 -32.512560041208765 60.62281333072547 -32.56018130197047 60.68153428384517 -32.56018130197047 60.68153428384517 -32.512560041208765 60.62281333072547 -32.512560041208765</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:UnderKeelClearanceManagementArea>
+        <S127:CautionArea gml:id="Cb8d1b96a8d4946ff58f11c5b851bf7fd">
+            <S127:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="Cb8d1b96a8d4946ff58f11c5b851bf7fd.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>60.26153624720248 -32.15665377656867</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S127:geometry>
+        </S127:CautionArea>
+        <S127:MilitaryPracticeArea gml:id="Cc068c0d330d8d5dd41a8c3b2c3d7c603">
+            <S127:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="Cc068c0d330d8d5dd41a8c3b2c3d7c603.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>60.26010402883371 -32.26800875474077</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S127:geometry>
+        </S127:MilitaryPracticeArea>
+        <S127:PilotBoardingPlace gml:id="C5b8e2fd648a621e14c1fb36a7774cc4a">
+            <S127:categoryOfPilotBoardingPlace code="2">Boarding by Helicopter</S127:categoryOfPilotBoardingPlace>
+            <S127:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="C5b8e2fd648a621e14c1fb36a7774cc4a.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>60.26117819261029 -32.345706601246704</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S127:geometry>
+        </S127:PilotBoardingPlace>
+        <S127:PiracyRiskArea gml:id="Cc5de56d5c171e842517e865f1b491abe">
+            <S127:restriction code="7">Entry Prohibited</S127:restriction>
+            <S127:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="Cc5de56d5c171e842517e865f1b491abe.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>60.26153624720248 -32.409798373249295</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S127:geometry>
+        </S127:PiracyRiskArea>
+        <S127:PlaceOfRefuge gml:id="Cd4ede5603755f81358de3bd98ecf9f6f">
+            <S127:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="Cd4ede5603755f81358de3bd98ecf9f6f.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>60.261894301794676 -32.47066765392215</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S127:geometry>
+        </S127:PlaceOfRefuge>
+        <S127:SignalStationWarning gml:id="C879909f34487325f5eba822d89bab8af">
+            <S127:categoryOfSignalStationWarning code="6">Weather</S127:categoryOfSignalStationWarning>
+            <S127:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="C879909f34487325f5eba822d89bab8af.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>60.26261041097906 -32.52616611571211</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S127:geometry>
+        </S127:SignalStationWarning>
+        <S127:SignalStationTraffic gml:id="C3942424d488398204dff3b9f527be6f8">
+            <S127:categoryOfSignalStationTraffic code="1">Port Control</S127:categoryOfSignalStationTraffic>
+            <S127:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="C3942424d488398204dff3b9f527be6f8.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>60.26225235638687 -32.58166457750206</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S127:geometry>
+        </S127:SignalStationTraffic>
+        <S127:ISPSCodeSecurityLevel gml:id="C5aa8239d365d4817d487304688d15231">
+            <S127:iSPSLevel code="3">ISPS Level 3</S127:iSPSLevel>
+            <S127:geometry>
+                <S100:curveProperty>
+                    <S100:Curve gml:id="C5aa8239d365d4817d487304688d15231.C" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:segments>
+                            <gml:LineStringSegment>
+                                <gml:posList>60.67115070067156 -32.32279110734634 60.66971848230279 -32.407291991103946</gml:posList>
+                            </gml:LineStringSegment>
+                        </gml:segments>
+                    </S100:Curve>
+                </S100:curveProperty>
+            </S127:geometry>
+        </S127:ISPSCodeSecurityLevel>
+        <S127:RouteingMeasure gml:id="C7e9f6e681c38cb6bb27d9755e381a407">
+            <S127:categoryOfRouteingMeasure code="4">Recommended Route</S127:categoryOfRouteingMeasure>
+            <S127:geometry>
+                <S100:curveProperty>
+                    <S100:Curve gml:id="C7e9f6e681c38cb6bb27d9755e381a407.C" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:segments>
+                            <gml:LineStringSegment>
+                                <gml:posList>60.7008692318236 -32.319926670608794 60.69836284967825 -32.40693393651175</gml:posList>
+                            </gml:LineStringSegment>
+                        </gml:segments>
+                    </S100:Curve>
+                </S100:curveProperty>
+            </S127:geometry>
+        </S127:RouteingMeasure>
+        <S127:RadioCallingInPoint gml:id="C3d9ac6dfbd94f044dcb4ce23a5c2f797">
+            <S127:trafficFlow code="1">Inbound</S127:trafficFlow>
+            <S127:geometry>
+                <S100:curveProperty>
+                    <S100:Curve gml:id="C3d9ac6dfbd94f044dcb4ce23a5c2f797.C" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:segments>
+                            <gml:LineStringSegment>
+                                <gml:posList>60.63928384196636 -32.321358888977564 60.6374935690054 -32.408366154880525</gml:posList>
+                            </gml:LineStringSegment>
+                        </gml:segments>
+                    </S100:Curve>
+                </S100:curveProperty>
+            </S127:geometry>
+        </S127:RadioCallingInPoint>
+        <S127:RadioCallingInPoint gml:id="Ca989c08092cb6ea255abcf4d9df12533">
+            <S127:trafficFlow code="4">Two-Way</S127:trafficFlow>
+            <S127:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="Ca989c08092cb6ea255abcf4d9df12533.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>60.26153624720248 -32.63859525766079</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S127:geometry>
+        </S127:RadioCallingInPoint>
+        <S127:RadioCallingInPoint gml:id="Cf11ccac377c890c9691979dffd4800fe">
+            <S127:featureName>
+                <S127:language>eng</S127:language>
+                <S127:name>1A</S127:name>
+            </S127:featureName>
+            <S127:trafficFlow code="3">One-Way</S127:trafficFlow>
+            <S127:orientationValue>52.6</S127:orientationValue>
+            <S127:geometry>
+                <S100:pointProperty>
+                    <S100:Point gml:id="Cf11ccac377c890c9691979dffd4800fe.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:pos>60.54187651940503 -32.60561100951092</gml:pos>
+                    </S100:Point>
+                </S100:pointProperty>
+            </S127:geometry>
+        </S127:RadioCallingInPoint>
+        <S127:RadioCallingInPoint gml:id="C457c35825aa9cb7f0009a3740a913cbb">
+            <S127:callSign>EINS1</S127:callSign>
+            <S127:trafficFlow code="1">Inbound</S127:trafficFlow>
+            <S127:geometry>
+                <S100:curveProperty>
+                    <S100:Curve gml:id="C457c35825aa9cb7f0009a3740a913cbb.C" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:segments>
+                            <gml:LineStringSegment>
+                                <gml:posList>60.60740904335158 -32.584958335297465 60.665395397873986 -32.62427784966539</gml:posList>
+                            </gml:LineStringSegment>
+                        </gml:segments>
+                    </S100:Curve>
+                </S100:curveProperty>
+            </S127:geometry>
+        </S127:RadioCallingInPoint>
+        <S127:WaterwayArea gml:id="Cad651e61e3687e348afff4cc7e162f7b">
+            <S127:status code="1">Permanent</S127:status>
+            <S127:dynamicResource code="1">Static</S127:dynamicResource>
+            <S127:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="Cad651e61e3687e348afff4cc7e162f7b.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>60.424586536220914 -32.59513740972573 60.42433195507548 -32.62632360004164 60.50668895562401 -32.62657818118707 60.5059252121877 -32.59526470029845 60.424586536220914 -32.59513740972573</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S127:geometry>
+        </S127:WaterwayArea>
+    </S127:members>
+</S127:Dataset>
