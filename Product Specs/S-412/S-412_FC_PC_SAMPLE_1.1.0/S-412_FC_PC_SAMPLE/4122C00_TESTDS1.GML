@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S412:Dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.iho.int/S412/1.1 ../GML/S-412.xsd"
+ xmlns:s100_profile="http://www.iho.int/S-100/profile/s100_gmlProfile"
+ xmlns:S412="http://www.iho.int/S412/1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
+ xmlns:S100="http://www.iho.int/s100gml/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" gml:id="DS1">
+ <gml:boundedBy>
+    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+      <gml:lowerCorner>59.84982683781775 -32.325240342986184</gml:lowerCorner>
+      <gml:upperCorner>60.23253461637278 -32.05052955399599</gml:upperCorner>
+    </gml:Envelope>
+  </gml:boundedBy>
+    <S100:DatasetIdentificationInformation>
+        <S100:encodingSpecification>S-100 Part 10b</S100:encodingSpecification>
+        <S100:encodingSpecificationEdition>1.0</S100:encodingSpecificationEdition>
+        <S100:productIdentifier>S-412</S100:productIdentifier>
+        <S100:productEdition>1.1.0</S100:productEdition>
+        <S100:applicationProfile>1</S100:applicationProfile>
+        <S100:datasetFileIdentifier>XXXIC000000.GML</S100:datasetFileIdentifier>
+        <S100:datasetTitle>Sample GML Encoding</S100:datasetTitle>
+        <S100:datasetReferenceDate>2001-04-22</S100:datasetReferenceDate>
+        <S100:datasetLanguage>eng</S100:datasetLanguage>
+        <S100:datasetTopicCategory>oceans</S100:datasetTopicCategory>
+        <S100:datasetPurpose>base</S100:datasetPurpose>
+        <S100:updateNumber>0</S100:updateNumber>
+        <S100:datasetAbstract>The abstract of the dataset</S100:datasetAbstract>
+    </S100:DatasetIdentificationInformation>
+    <S412:members>
+        <S412:DataProvider gml:id="ID0">
+            <S412:issuingService>
+                <S412:metareaName code="11">METAREA XI</S412:metareaName>
+                <S412:countryName>UK</S412:countryName>
+                <S412:issuingServiceName>
+                    <S412:information>
+                        <S412:language>eng</S412:language>
+                        <S412:text>UK Met Office</S412:text>
+                    </S412:information>
+                    <S412:information>
+                        <S412:language>fra</S412:language>
+                        <S412:text>Le bureau meteo</S412:text>
+                    </S412:information>
+                </S412:issuingServiceName>
+            </S412:issuingService>
+            <S412:contactInformation>
+                <S412:agencyName>mety office</S412:agencyName>
+            </S412:contactInformation>
+            <S412:preparationService>
+                <S412:issuingServiceName>
+                    <S412:information>
+                        <S412:text>sdfksjdflkj</S412:text>
+                    </S412:information>
+                </S412:issuingServiceName>
+            </S412:preparationService>
+ 
+        </S412:DataProvider>
+        <S412:WindWarning gml:id="ID1">
+            <S412:fixedDateRange>
+                <S412:dateStart>
+                    <S100:date>2025-01-01</S100:date>
+                </S412:dateStart>
+                
+                <S412:dateEnd>20250101</S412:dateEnd>
+                
+                <S412:timeOfDayStart>0600</S412:timeOfDayStart>
+                
+                <S412:timeOfDayEnd>1800</S412:timeOfDayEnd>
+            
+            </S412:fixedDateRange>
+            <S412:issueDate>2025-01-01</S412:issueDate>
+            <S412:weatherWarningNumber>stuff</S412:weatherWarningNumber>
+            <S412:cancellationDate>20250101</S412:cancellationDate>
+            <S412:nextUpdateDateTime>20250101</S412:nextUpdateDateTime>
+            <S412:dataProviderInformation xlink:arcrole="http://www.iho.int/S-412/gml/1.0.0/roles/componentOf/dataProviderInformation" xlink:href="#ID0"/>
+            <S412:windWarningThreshold code="3">storm force</S412:windWarningThreshold>
+            <S412:beaufortForce code="8">gale</S412:beaufortForce>
+            <S412:maximumWindSpeed>15</S412:maximumWindSpeed>
+            <S412:geometry>
+                <S100:surfaceProperty>
+                    <S100:Surface gml:id="SID1">
+                        <gml:patches>
+                            <gml:PolygonPatch>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>59.98823074677464 -32.06206321307574 60.19373958128638 -32.05052955399599 60.23253461637278 -32.2046611798798 60.07525744710359 -32.325240342986184 59.879185242748 -32.28854233682337 59.84982683781775 -32.17425426048776 59.88757335844235 -32.08408201677342 59.91378621998722 -32.06520875646112 59.98823074677464 -32.06206321307574</gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:PolygonPatch>
+                        </gml:patches>
+                    </S100:Surface>
+                </S100:surfaceProperty>
+            </S412:geometry>
+        </S412:WindWarning>
+    </S412:members>
+</S412:Dataset>

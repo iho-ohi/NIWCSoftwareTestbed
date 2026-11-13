@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<portrayalCatalog productId="S-412" version="1.1">
+	<pixmaps/>
+	<colorProfiles>
+		<colorProfile id="837">
+			<description>
+				<name>Color Profile</name>
+				<description>Color Profile</description>
+				<language>en</language>
+			</description>
+			<fileName>colorProfile.xml</fileName>
+			<fileType>ColorProfile</fileType>
+			<fileFormat>XML</fileFormat>
+		</colorProfile>
+	</colorProfiles>
+	<symbols>
+	</symbols>
+	<lineStyles>
+		</lineStyles>
+	<areaFills>
+		</areaFills>
+	<fonts/>
+	<viewingGroups>
+		<viewingGroup id="21010">
+			<description>
+				<name>Unknown object (magenta question mark)</name>
+				<description>Standard: A, B - Information about the chart display</description>
+				<language>eng</language>
+			</description>
+		</viewingGroup>
+		<viewingGroup id="12210">
+			<description>
+			   <name>bridge (BRIDGE), pylon (PYLONS), overhead cable (CBLOHD), conveyor (CONVYR), overhead pipeline (PIPOHD), offshore platform (OFSPLF)</name>
+			   <description>Base: C, D, E, F - Topography and Infrastructure</description>
+			   <language>eng</language>
+			</description>
+		 </viewingGroup>
+	</viewingGroups>
+	<viewingGroupLayers/>
+	<displayModes>
+	</displayModes>
+	<foundationMode>
+		<viewingGroup>12210</viewingGroup>
+		<viewingGroup>21010</viewingGroup>
+    </foundationMode>
+	<displayPlanes>
+		<displayPlane id="OverRadar" order="1">
+			<description>
+			   <name>Over radar</name>
+			   <description>Content displayed on top of Radar image</description>
+			   <language>eng</language>
+			</description>
+		 </displayPlane>
+		 <displayPlane id="UnderRadar" order="-1">
+			<description>
+			   <name>Under radar</name>
+			   <description>Content displayed underneath Radar image</description>
+			   <language>eng</language>
+			</description>
+		 </displayPlane>
+	</displayPlanes>
+	<context/>
+	<rules>
+		<ruleFile id="1">
+			<description>
+				<name>main</name>
+				<description>main</description>
+			</description>
+			<fileName>main.xsl</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>XSLT</fileFormat>
+			<ruleType>TopLevelTemplate</ruleType>
+		</ruleFile>
+		<ruleFile id="2">
+			<description>
+				<name>_Default_COMMON</name>
+				<description>_Default_COMMON</description>
+			</description>
+			<fileName>_Default_COMMON.xsl</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>XSLT</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		</ruleFile>
+		<ruleFile id="3">
+			<description>
+				<name>attributeRules</name>
+				<description>attributeRules</description>
+			</description>
+			<fileName>attributeRules.xsl</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>XSLT</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		</ruleFile>
+		<ruleFile id="4">
+			<description>
+				<name>IceAccretionWarning</name>
+				<description>IceAccretionWarning</description>
+			</description>
+			<fileName>IceAccretionWarning.xsl</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>XSLT</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		</ruleFile>
+		<ruleFile id="5">
+			<description>
+				<name>RestrictedVisibilityWarning</name>
+				<description>RestrictedVisibilityWarning</description>
+			</description>
+			<fileName>RestrictedVisibilityWarning.xsl</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>XSLT</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		</ruleFile>
+		<ruleFile id="6">
+			<description>
+				<name>simpleLineStyle</name>
+				<description>simpleLineStyle</description>
+			</description>
+			<fileName>simpleLineStyle.xsl</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>XSLT</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		</ruleFile>
+		<ruleFile id="7">
+			<description>
+				<name>textStyle</name>
+				<description>textStyle</description>
+			</description>
+			<fileName>textStyle.xsl</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>XSLT</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		</ruleFile>
+		<ruleFile id="8">
+			<description>
+				<name>ThunderstormWarning</name>
+				<description>ThunderstormWarning</description>
+			</description>
+			<fileName>ThunderstormWarning.xsl</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>XSLT</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		</ruleFile>
+		<ruleFile id="9">
+			<description>
+				<name>WaveHeightWarning</name>
+				<description>WaveHeightWarning</description>
+			</description>
+			<fileName>WaveHeightWarning.xsl</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>XSLT</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		</ruleFile>
+		<ruleFile id="10">
+			<description>
+				<name>WindWarning</name>
+				<description>WindWarning</description>
+			</description>
+			<fileName>WindWarning.xsl</fileName>
+			<fileType>Rule</fileType>
+			<fileFormat>XSLT</fileFormat>
+			<ruleType>SubTemplate</ruleType>
+		</ruleFile>
+	</rules>
+</portrayalCatalog>

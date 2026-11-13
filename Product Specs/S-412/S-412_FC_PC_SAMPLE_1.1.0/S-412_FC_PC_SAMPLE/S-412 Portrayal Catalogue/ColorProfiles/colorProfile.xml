@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<colorProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="s100ColorProfile.xsd">
+    <colors>
+        <color token="WXLGR" name="weather_light_gray">
+            <description>Weather Light Gray</description>
+        </color>
+        <color token="WXDGR" name="weather_dark_gray">
+            <description>Weather Dark Gray</description>
+        </color>
+
+        <color token="WXGRN" name="weather_bright_green">
+            <description>Weather Bright Green</description>
+        </color>
+        
+        <color token="WXYLW" name="weather_yellow">
+            <description>Weather Yellow</description>
+        </color>
+        <color token="WXORG" name="weather_orange">
+            <description>Weather Orange</description>
+        </color>
+        <color token="WXRED" name="weather_red">
+            <description>Weather Red</description>
+        </color>
+        <color token="WXPRP" name="weather_purple">
+            <description>Weather Purple</description>
+        </color>
+        <color token="WXLBL" name="weather_light_blue">
+            <description>Weather Light Blue</description>
+        </color>
+        <color token="WXBLU" name="weather_blue">
+            <description>Weather Blue</description>
+        </color>
+        <color token="WXSKB" name="weather_sky_blue">
+            <description>Weather Sky Blue</description>
+        </color>
+        <color token="WXSTB" name="weather_steel_blue">
+            <description>Weather Steel Blue</description>
+        </color>
+        <color token="WXDSB" name="weather_deep_sky_blue">
+            <description>Weather Deep Sky Blue</description>
+        </color>
+        <color token="WXNAV" name="weather_navy">
+            <description>Weather Navy</description>
+        </color>
+        <color token="WXLCY" name="weather_light_cyan">
+            <description>Weather Light Cyan</description>
+        </color>
+        <color token="WXDCY" name="weather_dark_turquoise">
+            <description>Weather Dark Turquoise</description>
+        </color>
+        <color token="WXCYN" name="weather_cyan">
+            <description>Weather Cyan</description>
+        </color>
+        <color token="WXDKC" name="weather_dark_cyan">
+            <description>Weather Dark Cyan</description>
+        </color>
+        <color token="WXLYL" name="weather_light_yellow">
+            <description>Weather Light Yellow</description>
+        </color>
+        <color token="WXDKY" name="weather_dark_khaki">
+            <description>Weather Dark Khaki</description>
+        </color>
+        <color token="WXLPN" name="weather_light_pink">
+            <description>Weather Light Pink (Moderate Ice Accretion)</description>
+        </color>
+        <color token="WXHPK" name="weather_hot_pink">
+            <description>Weather Hot Pink (Severe Ice Accretion)</description>
+        </color>
+        <color token="WXLBL" name="weather_light_blue">
+            <description>Weather Light Blue (Significant Wave Height 6–9 m)</description>
+        </color>
+        <color token="WXSTB" name="weather_steel_blue">
+            <description>Weather Steel Blue (Significant Wave Height 9–14 m)</description>
+        </color>
+        <color token="WXBRN" name="weather_brown">
+            <description>Weather Brown (Thunderstorm Warning)</description>
+        </color>
+        <color token="WXGRY" name="weather_visibility_gray">
+            <description>Weather Visibility Gray (Restricted Visibility)</description>
+        </color>
+        <color token="WXVLB" name="weather_very_light_blue">
+            <description>Weather Very Light Blue (Very Low Significant Wave Height)</description>
+        </color>
+    </colors>
+    <palette name="Day" css="svgStyle.css">
+        <item token="WXLGR">
+            <cie>
+                <xyL>
+                    <x>0.313</x>
+                    <y>0.329</y>
+                    <L>65.1</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>211</red>
+                <green>211</green>
+                <blue>211</blue>
+            </srgb>
+        </item>
+        <item token="WXDGR">
+            <cie>
+                <xyL>
+                    <x>0.313</x>
+                    <y>0.329</y>
+                    <L>39.7</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>169</red>
+                <green>169</green>
+                <blue>169</blue>
+            </srgb>
+        </item>
+        <item token="WXGRN">
+            <cie>
+                <xyL>
+                    <x>0.300</x>
+                    <y>0.600</y>
+                    <L>71.5</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+            </srgb>
+        </item>
+        <item token="WXYLW">
+            <cie>
+                <xyL>
+                    <x>0.419</x>
+                    <y>0.505</y>
+                    <L>92.8</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>255</red>
+                <green>255</green>
+                <blue>0</blue>
+            </srgb>
+        </item>
+        <item token="WXORG">
+            <cie>
+                <xyL>
+                    <x>0.5</x>
+                    <y>0.441</y>
+                    <L>48.2</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>255</red>
+                <green>165</green>
+                <blue>0</blue>
+            </srgb>
+        </item>
+        <item token="WXRED">
+            <cie>
+                <xyL>
+                    <x>0.64</x>
+                    <y>0.33</y>
+                    <L>21.3</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+            </srgb>
+        </item>
+        <item token="WXPRP">
+            <cie>
+                <xyL>
+                    <x>0.321</x>
+                    <y>0.154</y>
+                    <L>28.5</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>255</red>
+                <green>0</green>
+                <blue>255</blue>
+            </srgb>
+        </item>
+        <item token="WXLBL">
+            <cie>
+                <xyL>
+                    <x>0.275</x>
+                    <y>0.312</y>
+                    <L>63.7</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>173</red>
+                <green>216</green>
+                <blue>230</blue>
+            </srgb>
+        </item>
+        <item token="WXBLU">
+            <cie>
+                <xyL>
+                    <x>0.15</x>
+                    <y>0.06</y>
+                    <L>7.2</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>0</red>
+                <green>0</green>
+                <blue>255</blue>
+            </srgb>
+        </item>
+        <item token="WXSKB">
+            <cie>
+                <xyL>
+                    <x>0.249</x>
+                    <y>0.292</y>
+                    <L>55.3</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>135</red>
+                <green>206</green>
+                <blue>235</blue>
+            </srgb>
+        </item>
+        <item token="WXSTB">
+            <cie>
+                <xyL>
+                    <x>0.219</x>
+                    <y>0.241</y>
+                    <L>20.6</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>70</red>
+                <green>130</green>
+                <blue>180</blue>
+            </srgb>
+        </item>
+        <item token="WXDSB">
+            <cie>
+                <xyL>
+                    <x>0.15</x>
+                    <y>0.06</y>
+                    <L>1.9</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>0</red>
+                <green>0</green>
+                <blue>139</blue>
+            </srgb>
+        </item>
+        <item token="WXNAV">
+            <cie>
+                <xyL>
+                    <x>0.15</x>
+                    <y>0.06</y>
+                    <L>1.6</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>0</red>
+                <green>0</green>
+                <blue>128</blue>
+            </srgb>
+        </item>
+        <item token="WXLCY">
+            <cie>
+                <xyL>
+                    <x>0.294</x>
+                    <y>0.329</y>
+                    <L>94.6</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>224</red>
+                <green>255</green>
+                <blue>255</blue>
+            </srgb>
+        </item>
+        <item token="WXDCY">
+            <cie>
+                <xyL>
+                    <x>0.223</x>
+                    <y>0.324</y>
+                    <L>48.7</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>0</red>
+                <green>206</green>
+                <blue>209</blue>
+            </srgb>
+        </item>
+        <item token="WXCYN">
+            <cie>
+                <xyL>
+                    <x>0.225</x>
+                    <y>0.329</y>
+                    <L>78.7</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>0</red>
+                <green>255</green>
+                <blue>255</blue>
+            </srgb>
+        </item>
+        <item token="WXDKC">
+            <cie>
+                <xyL>
+                    <x>0.225</x>
+                    <y>0.329</y>
+                    <L>20.3</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>0</red>
+                <green>139</green>
+                <blue>139</blue>
+            </srgb>
+        </item>
+        <item token="WXLYL">
+            <cie>
+                <xyL>
+                    <x>0.331</x>
+                    <y>0.359</y>
+                    <L>98.2</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>255</red>
+                <green>255</green>
+                <blue>224</blue>
+            </srgb>
+        </item>
+        <item token="WXDKY">
+            <cie>
+                <xyL>
+                    <x>0.379</x>
+                    <y>0.428</y>
+                    <L>45.7</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>189</red>
+                <green>183</green>
+                <blue>107</blue>
+            </srgb>
+        </item>
+        <item token="WXLPN">
+            <cie>
+                <xyL>
+                    <x>0.325</x>
+                    <y>0.280</y>
+                    <L>88.0</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>240</red>
+                <green>192</green>
+                <blue>240</blue>
+            </srgb>
+        </item>
+        <item token="WXHPK">
+            <cie>
+                <xyL>
+                    <x>0.382</x>
+                    <y>0.159</y>
+                    <L>72.0</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>240</red>
+                <green>0</green>
+                <blue>240</blue>
+            </srgb>
+        </item>
+        <item token="WXLBL">
+            <cie>
+                <xyL>
+                    <x>0.255</x>
+                    <y>0.285</y>
+                    <L>80.0</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>180</red>
+                <green>210</green>
+                <blue>235</blue>
+            </srgb>
+        </item>
+        <item token="WXSTB">
+            <cie>
+                <xyL>
+                    <x>0.205</x>
+                    <y>0.225</y>
+                    <L>60.0</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>120</red>
+                <green>155</green>
+                <blue>205</blue>
+            </srgb>
+        </item>
+        <item token="WXBRN">
+            <cie>
+                <xyL>
+                    <x>0.480</x>
+                    <y>0.380</y>
+                    <L>55.0</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>150</red>
+                <green>90</green>
+                <blue>40</blue>
+            </srgb>
+        </item>
+                
+        <item token="WXGRY">
+            <cie>
+                <xyL>
+                    <x>0.345</x>
+                    <y>0.355</y>
+                    <L>45.0</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>120</red>
+                <green>120</green>
+                <blue>100</blue>
+            </srgb>
+        </item>
+        <item token="WXVLB">
+            <cie>
+                <xyL>
+                    <x>0.285</x>
+                    <y>0.305</y>
+                    <L>68.0</L>
+                </xyL>
+            </cie>
+            <srgb>
+                <red>210</red>
+                <green>235</green>
+                <blue>245</blue>
+            </srgb>
+        </item>
+    </palette>
+</colorProfile>

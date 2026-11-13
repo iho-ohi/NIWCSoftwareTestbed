@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<S100FC:S100_FC_FeatureCatalogue xmlns:S100CI="http://www.iho.int/S100CI/5.0" xmlns:S100Base="http://www.iho.int/S100Base/5.0" xmlns:S100CD="http://www.iho.int/S100CD/5.0" xmlns:S100FC="http://www.iho.int/S100FC/5.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <S100FC:name>S-412-1.1.0_v009</S100FC:name>
+    <S100FC:scope>global</S100FC:scope>
+    <S100FC:fieldOfApplication>Marine Navigation</S100FC:fieldOfApplication>
+    <S100FC:versionNumber>1.1.0</S100FC:versionNumber>
+    <S100FC:versionDate>2026-01-09Z</S100FC:versionDate>
+    <S100FC:productId>S-412</S100FC:productId>
+    <S100FC:producer>
+        <S100CI:role>pointOfContact</S100CI:role>
+        <S100CI:party>
+            <S100CI:CI_Organisation>
+                <S100CI:name>International Hydrographic Organization</S100CI:name>
+                <S100CI:contactInfo>
+                    <S100CI:address>
+                        <S100CI:administrativeArea>4b quai Antonie 1er</S100CI:administrativeArea>
+                        <S100CI:country>Monaco</S100CI:country>
+                        <S100CI:electronicMailAddress>info@iho.int</S100CI:electronicMailAddress>
+                    </S100CI:address>
+                    <S100CI:onlineResource>
+                        <S100CI:linkage>https://iho.int/</S100CI:linkage>
+                    </S100CI:onlineResource>
+                </S100CI:contactInfo>
+            </S100CI:CI_Organisation>
+        </S100CI:party>
+    </S100FC:producer>
+    <S100FC:classification>unclassified</S100FC:classification>
+    <S100FC:S100_FC_DefinitionSources>
+        <S100FC:FC_DefinitionSource id="IHOREG">
+            <S100FC:source>
+                <S100CI:title>IHO GI Registry</S100CI:title>
+                <S100CI:onlineResource>
+                    <S100CI:linkage>http://registry.iho.int</S100CI:linkage>
+                </S100CI:onlineResource>
+            </S100FC:source>
+        </S100FC:FC_DefinitionSource>
+    </S100FC:S100_FC_DefinitionSources>
+    <S100FC:S100_FC_SimpleAttributes>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Beaufort Force</S100FC:name>
+            <S100FC:definition>Wind force scale, originally based on the state of the sea, expressed in numbers from 0 to 12, as defined by WMO (WMO 306 Manual on Codes, Volume I.1 - International Codes).</S100FC:definition>
+            <S100FC:code>beaufortForce</S100FC:code>
+            <S100FC:remarks>Note: for S-412, we will limit the attribute to enumeration values 7-12.</S100FC:remarks>
+            <S100FC:alias>BEAFOR</S100FC:alias>
+            <S100FC:valueType>enumeration</S100FC:valueType>
+            <S100FC:listedValues>
+                <S100FC:listedValue>
+                    <S100FC:label>calm</S100FC:label>
+                    <S100FC:definition>Absence of air motion or wind with a speed of less than 1 knot (Beaufort scale wind force 0).</S100FC:definition>
+                    <S100FC:code>99</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>light air</S100FC:label>
+                    <S100FC:definition>Wind with a speed between 1 and 3 knots (Beaufort scale wind force 1)</S100FC:definition>
+                    <S100FC:code>1</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>light breeze</S100FC:label>
+                    <S100FC:definition>Wind with a speed between 4 and 6 knots (Beaufort scale wind force 2).</S100FC:definition>
+                    <S100FC:code>2</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>gentle breeze</S100FC:label>
+                    <S100FC:definition>Wind with a speed between 7 and 10 knots (Beaufort scale wind force 3).</S100FC:definition>
+                    <S100FC:code>3</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>moderate breeze</S100FC:label>
+                    <S100FC:definition>Wind with a speed between 11 and 16 knots (Beaufort scale wind force 4).</S100FC:definition>
+                    <S100FC:code>4</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>fresh breeze</S100FC:label>
+                    <S100FC:definition>Wind with a speed between 17 and 21 knots (Beaufort scale wind force 5).</S100FC:definition>
+                    <S100FC:code>5</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>strong breeze</S100FC:label>
+                    <S100FC:definition>Wind with a speed between 22 and 27 knots (Beaufort scale wind force 6).</S100FC:definition>
+                    <S100FC:code>6</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>near gale</S100FC:label>
+                    <S100FC:definition>Wind with a speed between 28 and 33 knots (Beaufort scale wind force 7).</S100FC:definition>
+                    <S100FC:code>7</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>gale</S100FC:label>
+                    <S100FC:definition>Wind with a speed between 34 and 40 knots (Beaufort scale wind force 8).</S100FC:definition>
+                    <S100FC:code>8</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>strong gale</S100FC:label>
+                    <S100FC:definition>Wind with a speed between 41 and 47 knots (Beaufort scale wind force 9).</S100FC:definition>
+                    <S100FC:code>9</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>storm</S100FC:label>
+                    <S100FC:definition>Wind with a speed between 48 and 55 knots (Beaufort scale wind force 10).</S100FC:definition>
+                    <S100FC:code>10</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>violent storm</S100FC:label>
+                    <S100FC:definition>Wind with a speed between 56 and 63 knots (Beaufort scale wind force 11).</S100FC:definition>
+                    <S100FC:code>11</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>hurricane</S100FC:label>
+                    <S100FC:definition>(1) Term, derived from a Caribbean word, first applied to tropical cyclones of the Caribbean Sea. (2) Wind with a speed 64 knots or higher (Beaufort scale wind force 12).</S100FC:definition>
+                    <S100FC:code>12</S100FC:code>
+                </S100FC:listedValue>
+            </S100FC:listedValues>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Ice Accretion Rate</S100FC:name>
+            <S100FC:definition>Represents the ice accretion warning that has been exceeded or forecast to be exceeded based on ice accumulation rates.</S100FC:definition>
+            <S100FC:code>iceAccretionRate</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>enumeration</S100FC:valueType>
+            <S100FC:listedValues>
+                <S100FC:listedValue>
+                    <S100FC:label>moderateIcing</S100FC:label>
+                    <S100FC:definition>Ice accumulation rates between 0.7 and 2 centimeters per hour are forecast or occurring.</S100FC:definition>
+                    <S100FC:code>1</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>severeIcing</S100FC:label>
+                    <S100FC:definition>Ice accumulation rates greater than or equal to 2 centimeters per hour are forecast or occurring.</S100FC:definition>
+                    <S100FC:code>2</S100FC:code>
+                </S100FC:listedValue>
+            </S100FC:listedValues>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Metarea Name</S100FC:name>
+            <S100FC:definition>A name referencing a defined geographical area of the ocean used to coordinate the transmission of meteorological information and services to mariners.</S100FC:definition>
+            <S100FC:code>metareaName</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>enumeration</S100FC:valueType>
+            <S100FC:listedValues>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA I</S100FC:label>
+                    <S100FC:definition>METAREA 1.</S100FC:definition>
+                    <S100FC:code>1</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA II</S100FC:label>
+                    <S100FC:definition>METAREA 2.</S100FC:definition>
+                    <S100FC:code>2</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA III</S100FC:label>
+                    <S100FC:definition>METAREA 3.</S100FC:definition>
+                    <S100FC:code>3</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA IV</S100FC:label>
+                    <S100FC:definition>METAREA 4.</S100FC:definition>
+                    <S100FC:code>4</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA V</S100FC:label>
+                    <S100FC:definition>METAREA 5.</S100FC:definition>
+                    <S100FC:code>5</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA VI</S100FC:label>
+                    <S100FC:definition>METAREA 6.</S100FC:definition>
+                    <S100FC:code>6</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA VII</S100FC:label>
+                    <S100FC:definition>METAREA 7.</S100FC:definition>
+                    <S100FC:code>7</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA VIII</S100FC:label>
+                    <S100FC:definition>METAREA 8.</S100FC:definition>
+                    <S100FC:code>8</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA IX</S100FC:label>
+                    <S100FC:definition>METAREA 9.</S100FC:definition>
+                    <S100FC:code>9</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA X</S100FC:label>
+                    <S100FC:definition>METAREA 10.</S100FC:definition>
+                    <S100FC:code>10</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XI</S100FC:label>
+                    <S100FC:definition>METAREA 11.</S100FC:definition>
+                    <S100FC:code>11</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XII</S100FC:label>
+                    <S100FC:definition>METAREA 12.</S100FC:definition>
+                    <S100FC:code>12</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XIII</S100FC:label>
+                    <S100FC:definition>METAREA 13.</S100FC:definition>
+                    <S100FC:code>13</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XIV</S100FC:label>
+                    <S100FC:definition>METAREA 14.</S100FC:definition>
+                    <S100FC:code>14</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XV</S100FC:label>
+                    <S100FC:definition>METAREA 15.</S100FC:definition>
+                    <S100FC:code>15</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XVI</S100FC:label>
+                    <S100FC:definition>METAREA 16.</S100FC:definition>
+                    <S100FC:code>16</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XVII</S100FC:label>
+                    <S100FC:definition>METAREA 17.</S100FC:definition>
+                    <S100FC:code>17</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XVIII</S100FC:label>
+                    <S100FC:definition>METAREA 18.</S100FC:definition>
+                    <S100FC:code>18</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XIX</S100FC:label>
+                    <S100FC:definition>METAREA 19.</S100FC:definition>
+                    <S100FC:code>19</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XX</S100FC:label>
+                    <S100FC:definition>METAREA 20.</S100FC:definition>
+                    <S100FC:code>20</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XXI</S100FC:label>
+                    <S100FC:definition>METAREA 21.</S100FC:definition>
+                    <S100FC:code>21</S100FC:code>
+                </S100FC:listedValue>
+            </S100FC:listedValues>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Significant Wave Height Warning Threshold</S100FC:name>
+            <S100FC:definition>Represents the significant wave height warning that has been exceeded or is forecast to be exceeded based on predetermined bins of significant wave height values.</S100FC:definition>
+            <S100FC:code>significantWaveHeightWarningThreshold</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>enumeration</S100FC:valueType>
+            <S100FC:listedValues>
+                <S100FC:listedValue>
+                    <S100FC:label>two and a half to four metres</S100FC:label>
+                    <S100FC:definition>Significant wave heights between 2.5 and 4 metres (8-13 feet) are forecast or occurring.</S100FC:definition>
+                    <S100FC:code>1</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>four to six metres</S100FC:label>
+                    <S100FC:definition>Significant wave heights between 4 and 6 metres (13-20 feet) are forecast or occurring.</S100FC:definition>
+                    <S100FC:code>2</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>six to nine metres</S100FC:label>
+                    <S100FC:definition>Significant wave heights between 6 and 9 metres (20-30 feet) are forecast or occurring.</S100FC:definition>
+                    <S100FC:code>3</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>nine to fourteen metres</S100FC:label>
+                    <S100FC:definition>Significant wave heights between 9 and 14 metres (30-45 feet) are forecast or occurring.</S100FC:definition>
+                    <S100FC:code>4</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>greater than fourteen metres</S100FC:label>
+                    <S100FC:definition>Significant wave heights greater than 14 metres (>45 feet) are forecast or occurring.</S100FC:definition>
+                    <S100FC:code>5</S100FC:code>
+                </S100FC:listedValue>
+            </S100FC:listedValues>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Text</S100FC:name>
+            <S100FC:definition>A non-formatted digital text string.</S100FC:definition>
+            <S100FC:code>text</S100FC:code>
+            <S100FC:remarks>Should be used, for example, to hold the information that is for short cautionary or explanatory notes. Therefore, text populated in text must not exceed 300 characters.  Text may be in English, or in a national language.  No formatting of text is possible within text. If formatted text, or text strings exceeding 300 characters, is required, then an alternate concept should be used.</S100FC:remarks>
+            <S100FC:alias>INFORM; NINFOM</S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Language</S100FC:name>
+            <S100FC:definition>The method of human communication, either spoken or written, consisting of the use of words in a structured and conventional way.</S100FC:definition>
+            <S100FC:code>language</S100FC:code>
+            <S100FC:remarks>The language is encoded by a 3 character code following ISO 639-2/T.</S100FC:remarks>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Agency Name</S100FC:name>
+            <S100FC:definition>The name of an agency, entity or organization.</S100FC:definition>
+            <S100FC:code>agencyName</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Mailing Address</S100FC:name>
+            <S100FC:definition>The physical address a parcel may be sent to.</S100FC:definition>
+            <S100FC:code>mailingAddress</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Telephone Number</S100FC:name>
+            <S100FC:definition>The telephone number of an entity.</S100FC:definition>
+            <S100FC:code>telephoneNumber</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Email Address</S100FC:name>
+            <S100FC:definition>Identifies an email box to which email messages are delivered.</S100FC:definition>
+            <S100FC:code>emailAddress</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Web Address</S100FC:name>
+            <S100FC:definition>A reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it.</S100FC:definition>
+            <S100FC:code>webAddress</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Country Name</S100FC:name>
+            <S100FC:definition>The name of a nation.</S100FC:definition>
+            <S100FC:code>countryName</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Date Start</S100FC:name>
+            <S100FC:definition>The earliest date on which an object (for example a buoy) will be present.</S100FC:definition>
+            <S100FC:code>dateStart</S100FC:code>
+            <S100FC:alias>DATSTA</S100FC:alias>
+            <S100FC:definitionReference>
+                <S100FC:sourceIdentifier>792</S100FC:sourceIdentifier>
+                <S100FC:definitionSource ref="IHOREG"/>
+            </S100FC:definitionReference>
+            <S100FC:valueType>S100_TruncatedDate</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Date End</S100FC:name>
+            <S100FC:definition>The latest date on which an object (for example a buoy) will be present.</S100FC:definition>
+            <S100FC:code>dateEnd</S100FC:code>
+            <S100FC:alias>DATEND</S100FC:alias>
+            <S100FC:definitionReference>
+                <S100FC:sourceIdentifier>790</S100FC:sourceIdentifier>
+                <S100FC:definitionSource ref="IHOREG"/>
+            </S100FC:definitionReference>
+            <S100FC:valueType>S100_TruncatedDate</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Issue Date</S100FC:name>
+            <S100FC:definition>Date up to which the data was made available by the Data Producer.</S100FC:definition>
+            <S100FC:code>issueDate</S100FC:code>
+            <S100FC:valueType>date</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Issue Time</S100FC:name>
+            <S100FC:definition>The time, expressed in Universal Time Coordinated (UTC), at which the data was made available by the Data Producer.</S100FC:definition>
+            <S100FC:code>issueTime</S100FC:code>
+            <S100FC:valueType>time</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Weather Warning Number</S100FC:name>
+            <S100FC:definition>Identification number given to a specifc weather warning.</S100FC:definition>
+            <S100FC:code>weatherWarningNumber</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Cancellation Date</S100FC:name>
+            <S100FC:definition>Date and time of cancelling a notice or warning.</S100FC:definition>
+            <S100FC:code>cancellationDate</S100FC:code>
+            <S100FC:definitionReference>
+                <S100FC:sourceIdentifier>1094</S100FC:sourceIdentifier>
+                <S100FC:definitionSource ref="IHOREG"/>
+            </S100FC:definitionReference>
+            <S100FC:valueType>dateTime</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Next Update Date Time</S100FC:name>
+            <S100FC:definition>The time, expressed in Universal Time Coordinated (UTC) an object and its attributes are scheduled to be updated.</S100FC:definition>
+            <S100FC:code>nextUpdateDateTime</S100FC:code>
+            <S100FC:remarks>Unit: Years, months, days, hours, minutes, secondsResolution:1 secondFormat: YYYYMMDDTHHMMSS, where Y is year, M is month, D is day, H is hour, M is minute, and S is secondExample: 19850412T183059 denotes 18 hours, 30 minutes, 59 seconds on 12 April 1985.</S100FC:remarks>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>dateTime</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Interoperability Identifier</S100FC:name>
+            <S100FC:definition>interoperabilityIdentifier</S100FC:definition>
+            <S100FC:code>interoperabilityIdentifier</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>URN</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Time of Day Start</S100FC:name>
+            <S100FC:definition>The time corresponding to the start of an active period.</S100FC:definition>
+            <S100FC:code>timeOfDayStart</S100FC:code>
+            <S100FC:definitionReference>
+                <S100FC:sourceIdentifier>181</S100FC:sourceIdentifier>
+                <S100FC:definitionSource ref="IHOREG"/>
+            </S100FC:definitionReference>
+            <S100FC:valueType>time</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Time of Day End</S100FC:name>
+            <S100FC:definition>The time corresponding to the end of an active period.</S100FC:definition>
+            <S100FC:code>timeOfDayEnd</S100FC:code>
+            <S100FC:definitionReference>
+                <S100FC:sourceIdentifier>180</S100FC:sourceIdentifier>
+                <S100FC:definitionSource ref="IHOREG"/>
+            </S100FC:definitionReference>
+            <S100FC:valueType>time</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>File Reference</S100FC:name>
+            <S100FC:definition>fileReference</S100FC:definition>
+            <S100FC:code>fileReference</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Source Of Icing</S100FC:name>
+            <S100FC:definition>The type of weather phenomenon causing hazardous ice accretion.</S100FC:definition>
+            <S100FC:code>sourceOfIcing</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>enumeration</S100FC:valueType>
+            <S100FC:listedValues>
+                <S100FC:listedValue>
+                    <S100FC:label>freezingSpray</S100FC:label>
+                    <S100FC:definition>Sea spray transported through air at temperatures below 0C.</S100FC:definition>
+                    <S100FC:code>1</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>freezingRain</S100FC:label>
+                    <S100FC:definition>Precipitation drops freezing on impact to form a coating of clear ice (glaze) on the ground and on exposed objects.</S100FC:definition>
+                    <S100FC:code>2</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>freezingFog</S100FC:label>
+                    <S100FC:definition>Tiny, supercooled liquid water droplets in fog can freeze instantly on exposed surfaces when surface temperatures are at or below freezing.</S100FC:definition>
+                    <S100FC:code>3</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>otherIcingSource</S100FC:label>
+                    <S100FC:definition>Source of icing is unknown or is different from other types of icing sources.</S100FC:definition>
+                    <S100FC:code>4</S100FC:code>
+                </S100FC:listedValue>
+            </S100FC:listedValues>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>Wind Warning Threshold</S100FC:name>
+            <S100FC:definition>Represents the wind warning that has been exceeded or forecast to be exceeded.</S100FC:definition>
+            <S100FC:code>windWarningThreshold</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>enumeration</S100FC:valueType>
+            <S100FC:listedValues>
+                <S100FC:listedValue>
+                    <S100FC:label>near gale force</S100FC:label>
+                    <S100FC:definition>Wind speeds between 28 and 33 knots (Beaufort scale wind force 7) are forecast or occurring.</S100FC:definition>
+                    <S100FC:code>1</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>gale force</S100FC:label>
+                    <S100FC:definition>Wind speeds between 34 and 47 knots (Beaufort scale wind force 8 and 9) are forecast or occurring.</S100FC:definition>
+                    <S100FC:code>2</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>storm force</S100FC:label>
+                    <S100FC:definition>Wind speeds between 48 and 63 knots (Beaufort scale wind force 10 or 11) are forecast or occurring.</S100FC:definition>
+                    <S100FC:code>3</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>hurricane force</S100FC:label>
+                    <S100FC:definition>Sustained wind speeds 64 knots or higher (Beaufort scale wind force 12) are forecast or occurring.</S100FC:definition>
+                    <S100FC:code>4</S100FC:code>
+                </S100FC:listedValue>
+            </S100FC:listedValues>
+        </S100FC:S100_FC_SimpleAttribute>
+    </S100FC:S100_FC_SimpleAttributes>
+    <S100FC:S100_FC_ComplexAttributes>
+        <S100FC:S100_FC_ComplexAttribute>
+            <S100FC:name>Contact Information</S100FC:name>
+            <S100FC:definition>Information about where inquiries can be sent.</S100FC:definition>
+            <S100FC:code>contactInformation</S100FC:code>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="agencyName"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="mailingAddress"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="telephoneNumber"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="emailAddress"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="webAddress"/>
+            </S100FC:subAttributeBinding>
+        </S100FC:S100_FC_ComplexAttribute>
+        <S100FC:S100_FC_ComplexAttribute>
+            <S100FC:name>Fixed Date Range</S100FC:name>
+            <S100FC:definition>An active period of a single fixed event or occurrence, as the date range between discrete start and end dates.</S100FC:definition>
+            <S100FC:code>fixedDateRange</S100FC:code>
+            <S100FC:remarks>Dates must be encoded in the format YYYYMMDD; using 4 digits for the calendar year (YYYY) and, optionally, 2 digits for the month (MM) (for example April = 04) and 2 digits for the day (DD). When no specific month and/or day is required/known, the values are replaced with dashes (-). The date range of a recurring event or occurrence must be encoded using periodicDateRange.</S100FC:remarks>
+            <S100FC:definitionReference>
+                <S100FC:sourceIdentifier>798</S100FC:sourceIdentifier>
+                <S100FC:definitionSource ref="IHOREG"/>
+            </S100FC:definitionReference>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="dateStart"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="dateEnd"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="timeOfDayStart"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="timeOfDayEnd"/>
+            </S100FC:subAttributeBinding>
+        </S100FC:S100_FC_ComplexAttribute>
+        <S100FC:S100_FC_ComplexAttribute>
+            <S100FC:name>Information</S100FC:name>
+            <S100FC:definition>No definition set for information</S100FC:definition>
+            <S100FC:code>information</S100FC:code>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="language"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="text"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="fileReference"/>
+            </S100FC:subAttributeBinding>
+        </S100FC:S100_FC_ComplexAttribute>
+        <S100FC:S100_FC_ComplexAttribute>
+            <S100FC:name>Issuing Service</S100FC:name>
+            <S100FC:definition>The number of the METAREA, name of the Nation, and the National Meteorological and Hydrological Service (NMHS) or National Authority that broadcast the warning.</S100FC:definition>
+            <S100FC:code>issuingService</S100FC:code>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="metareaName"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="countryName"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="issuingServiceName"/>
+            </S100FC:subAttributeBinding>
+        </S100FC:S100_FC_ComplexAttribute>
+        <S100FC:S100_FC_ComplexAttribute>
+            <S100FC:name>Issuing Service Name</S100FC:name>
+            <S100FC:definition>The identifier that indicates which organization issued meteorological and oceanographic data.</S100FC:definition>
+            <S100FC:code>issuingServiceName</S100FC:code>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="information"/>
+            </S100FC:subAttributeBinding>
+        </S100FC:S100_FC_ComplexAttribute>
+        <S100FC:S100_FC_ComplexAttribute>
+            <S100FC:name>Maximum Wind Speed</S100FC:name>
+            <S100FC:definition>When applied to a warning or forecast polygon, refers to the maximum wind speed or range of wind speeds found within the contour of the polygon.</S100FC:definition>
+            <S100FC:code>maximumWindSpeed</S100FC:code>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="information"/>
+            </S100FC:subAttributeBinding>
+        </S100FC:S100_FC_ComplexAttribute>
+        <S100FC:S100_FC_ComplexAttribute>
+            <S100FC:name>Preparation Service</S100FC:name>
+            <S100FC:definition>The name of the Nation and National Meteorological and Hydrological Service (NMHS) or National Authority that prepared the warning and transferred it to the relevant Issuing Service for broadcast if not the same.</S100FC:definition>
+            <S100FC:code>preparationService</S100FC:code>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="issuingServiceName"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="countryName"/>
+            </S100FC:subAttributeBinding>
+        </S100FC:S100_FC_ComplexAttribute>
+        <S100FC:S100_FC_ComplexAttribute>
+            <S100FC:name>Weather Warning Message</S100FC:name>
+            <S100FC:definition>Text message associated with a weather warning polygon.</S100FC:definition>
+            <S100FC:code>weatherWarningMessage</S100FC:code>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="information"/>
+            </S100FC:subAttributeBinding>
+        </S100FC:S100_FC_ComplexAttribute>
+    </S100FC:S100_FC_ComplexAttributes>
+    <S100FC:S100_FC_Roles>
+        <S100FC:S100_FC_Role>
+            <S100FC:name>Information Provided For</S100FC:name>
+            <S100FC:definition>A pointer to a specific feature(s) for which further information is required.</S100FC:definition>
+            <S100FC:code>informationProvidedFor</S100FC:code>
+        </S100FC:S100_FC_Role>
+        <S100FC:S100_FC_Role>
+            <S100FC:name>Data Provider Information</S100FC:name>
+            <S100FC:definition>A pointer to an object that provides information about the data providers for the particular object</S100FC:definition>
+            <S100FC:code>dataProviderInformation</S100FC:code>
+        </S100FC:S100_FC_Role>
+    </S100FC:S100_FC_Roles>
+    <S100FC:S100_FC_InformationAssociations>
+        <S100FC:S100_FC_InformationAssociation isAbstract="false">
+            <S100FC:name>Data Provider Association</S100FC:name>
+            <S100FC:definition>An association that binds information about the data provider to features</S100FC:definition>
+            <S100FC:code>DataProviderAssociation</S100FC:code>
+            <S100FC:role ref="informationProvidedFor"/>
+            <S100FC:role ref="dataProviderInformation"/>
+        </S100FC:S100_FC_InformationAssociation>
+    </S100FC:S100_FC_InformationAssociations>
+    <S100FC:S100_FC_InformationTypes>
+        <S100FC:S100_FC_InformationType>
+            <S100FC:name>Data Provider</S100FC:name>
+            <S100FC:definition>The national authority providing a data in an official capacity.</S100FC:definition>
+            <S100FC:code>DataProvider</S100FC:code>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="issuingService"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="contactInformation"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="preparationService"/>
+            </S100FC:attributeBinding>
+        </S100FC:S100_FC_InformationType>
+    </S100FC:S100_FC_InformationTypes>
+    <S100FC:S100_FC_FeatureTypes>
+        <S100FC:S100_FC_FeatureType isAbstract="true">
+            <S100FC:name>Weather Warning</S100FC:name>
+            <S100FC:definition>A product issued by a national authority when a specific weather scenario or event threatens people or property meets criteria defined by WMO (WMO No. 558 and No. 471) or by a national authority where applicable.</S100FC:definition>
+            <S100FC:code>WeatherWarning</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="fixedDateRange"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="weatherWarningMessage"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="issueDate"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="issueTime"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="weatherWarningNumber"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="cancellationDate"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="nextUpdateDateTime"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="interoperabilityIdentifier"/>
+            </S100FC:attributeBinding>
+            <S100FC:informationBinding roleType="association">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:association ref="DataProviderAssociation"/>
+                <S100FC:role ref="dataProviderInformation"/>
+                <S100FC:informationType ref="DataProvider"/>
+            </S100FC:informationBinding>
+            <S100FC:featureUseType>geographic</S100FC:featureUseType>
+            <S100FC:permittedPrimitives>noGeometry</S100FC:permittedPrimitives>
+        </S100FC:S100_FC_FeatureType>
+        <S100FC:S100_FC_FeatureType isAbstract="false">
+            <S100FC:name>Ice Accretion Warning</S100FC:name>
+            <S100FC:definition>A product issued by a national authority when ice accumulation rates pose a hazard to vessels.</S100FC:definition>
+            <S100FC:code>IceAccretionWarning</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="iceAccretionRate"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="sourceOfIcing"/>
+            </S100FC:attributeBinding>
+            <S100FC:superType>WeatherWarning</S100FC:superType>
+            <S100FC:featureUseType>geographic</S100FC:featureUseType>
+            <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
+        </S100FC:S100_FC_FeatureType>
+        <S100FC:S100_FC_FeatureType isAbstract="false">
+            <S100FC:name>Restricted Visibility Warning</S100FC:name>
+            <S100FC:definition>A product issued by a national authority when horizontal visibility is degraded to less than 0.5 nautical miles by fog, smoke, dust, haze, heavy precipitation, or any other phenomena.</S100FC:definition>
+            <S100FC:code>RestrictedVisibilityWarning</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:superType>WeatherWarning</S100FC:superType>
+            <S100FC:featureUseType>geographic</S100FC:featureUseType>
+            <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
+        </S100FC:S100_FC_FeatureType>
+        <S100FC:S100_FC_FeatureType isAbstract="false">
+            <S100FC:name>Significant Wave Height Warning</S100FC:name>
+            <S100FC:definition>A product issued by a national authority when sea state conditions pose a hazard or are life-threatening.</S100FC:definition>
+            <S100FC:code>SignificantWaveHeightWarning</S100FC:code>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="significantWaveHeightWarningThreshold"/>
+            </S100FC:attributeBinding>
+            <S100FC:superType>WeatherWarning</S100FC:superType>
+            <S100FC:featureUseType>geographic</S100FC:featureUseType>
+            <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
+        </S100FC:S100_FC_FeatureType>
+        <S100FC:S100_FC_FeatureType isAbstract="false">
+            <S100FC:name>Thunderstorm Warning</S100FC:name>
+            <S100FC:definition>A product issued by a national authority when an area of thunderstorms or squalls poses a hazard. Conditions could include strong winds, locally higher waves, potentially heavy precipitation, hail, and dangerous lightning strikes.</S100FC:definition>
+            <S100FC:code>ThunderstormWarning</S100FC:code>
+            <S100FC:superType>WeatherWarning</S100FC:superType>
+            <S100FC:featureUseType>geographic</S100FC:featureUseType>
+            <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
+        </S100FC:S100_FC_FeatureType>
+        <S100FC:S100_FC_FeatureType isAbstract="false">
+            <S100FC:name>Wind Warning</S100FC:name>
+            <S100FC:definition>A product issued by a national authority when high wind speeds pose a hazard or are life-threatening.</S100FC:definition>
+            <S100FC:code>WindWarning</S100FC:code>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="windWarningThreshold"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:permittedValues>
+                    <S100FC:value>7</S100FC:value>
+                    <S100FC:value>8</S100FC:value>
+                    <S100FC:value>9</S100FC:value>
+                    <S100FC:value>10</S100FC:value>
+                    <S100FC:value>11</S100FC:value>
+                    <S100FC:value>12</S100FC:value>
+                </S100FC:permittedValues>
+                <S100FC:attribute ref="beaufortForce"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="maximumWindSpeed"/>
+            </S100FC:attributeBinding>
+            <S100FC:superType>WeatherWarning</S100FC:superType>
+            <S100FC:featureUseType>geographic</S100FC:featureUseType>
+            <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
+        </S100FC:S100_FC_FeatureType>
+    </S100FC:S100_FC_FeatureTypes>
+</S100FC:S100_FC_FeatureCatalogue>
