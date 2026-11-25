@@ -7,4 +7,4 @@ Dataset Fixes:
 
 Portrayal Catalog Fixes:
 1. S-122_Portrayal_Catalogue_2.0.0/2.0.0
-    - PC missing viewingGroups
+    - missing viewingGroups
